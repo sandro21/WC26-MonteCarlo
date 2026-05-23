@@ -75,7 +75,7 @@ if __name__ == "__main__":
     shootouts_clean = normalize_names(shootouts, former_names)
     merged_df = reconcile_shootouts(results_clean, shootouts_clean)
     final_df = calculate_outcomes(merged_df)
-    optimized_df = optimize_data(final_df)
+    optimized_df = optimize_data(final_df) #calling all functions to clean and process data
     PROCESSED_DIR = BASE_DIR / 'data' / 'processed'
     PROCESSED_DIR.mkdir(parents=True, exist_ok=True) # Creates directory if it doesn't exist
     output_path = PROCESSED_DIR / 'clean_results.csv'
