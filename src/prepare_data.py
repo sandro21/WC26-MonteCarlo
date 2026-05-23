@@ -71,3 +71,13 @@ def optimize_data(df):
 
 if __name__ == "__main__":
     results, shootouts, former_names = load_data()
+    results_clean = normalize_names(results, former_names)
+    shootouts_clean = normalize_names(shootouts, former_names)
+    merged_df = reconcile_shootouts(results_clean, shootouts_clean)
+    final_df = calculate_outcomes(merged_df)
+    optimized_df = optimize_data(final_df)
+    PROCESSED_DIR = BASE_DIR / 'data' / 'processed'
+    PROCESSED_DIR.mkdir(parents=True, exist_ok=True) # Creates directory if it doesn't exist
+    output_path = PROCESSED_DIR / 'clean_results.csv'
+    optimized_df.to_csv(output_path, index=False)
+    print(f"\nSuccess! Path: {output_path}")
