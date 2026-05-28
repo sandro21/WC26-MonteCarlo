@@ -101,16 +101,16 @@ if __name__ == "__main__":
     print("Starting Model Training Pipeline...")
     input_csv = PROCESSED_DIR / 'elo_results.csv'
     
-    # Execute Step 1 & 2
+    #Step 1 & 2
     df = load_and_prepare_data(input_csv)
     
-    # Execute Step 3 & 4
+    #Step 3 & 4
     print("\nTraining Poisson GLM models...")
     home_model, away_model = train_poisson_models(df)
     
-    # Execute Step 5
+    #Step 5
     print("\nExecuting Model Persistence...")
     persist_models(home_model, away_model, MODEL_DIR)
     
-    # Execute Step 6 (Test Prediction)
+    #Step 6 (Test Prediction)
     predict_match("Argentina", "Mexico", df, home_model, away_model, neutral=True)
