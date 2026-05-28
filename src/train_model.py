@@ -18,6 +18,10 @@ MODEL_DIR.mkdir(parents=True, exist_ok=True)
 #Step 2: Feature Engineering & Pre-processing
 def load_and_prepare_data(file_path):
     df = pd.read_csv(file_path, parse_dates=['date']) #loading thte data from path
+    
+    # Clean the data: drop any historical matches that are missing scores or Elos
+    df = df.dropna(subset=['home_score', 'away_score', 'home_elo_pre', 'away_elo_pre', 'neutral'])
+    
     df['elo_diff'] = df['home_elo_pre'] - df['away_elo_pre'] #modifying the dataframe, home team minus away team. main data for home goals.
     df['neg_elo_diff'] = -df['elo_diff'] #primary input for away gaosl model
     df['neutral_int'] = df['neutral'].astype(int) #converting neutral to 1 or 0 for model training
@@ -57,7 +61,7 @@ def predict_match(home_team, away_team, df, home_model, away_model, neutral=True
     # Fetch most recent Elo for both teams
     def get_latest_elo(team_name):
         team_matches = df[(df['home_team'] == team_name) | (df['away_team'] == team_name)]
-        if team_matches.empty:
+        if team_matches.empty: #which should not be the case, but just in case. 
             return 1500.0
         last_match = team_matches.iloc[-1]
         if last_match['home_team'] == team_name:
@@ -72,24 +76,23 @@ def predict_match(home_team, away_team, df, home_model, away_model, neutral=True
     elo_diff = home_elo - away_elo
     neutral_val = 1 if neutral else 0
     
-    # Get expected goals (Lambdas) from models
+    # Get expected goals from each model
     lambda_h = home_model.predict([1, elo_diff, neutral_val])[0]
     lambda_a = away_model.predict([1, -elo_diff, neutral_val])[0]
     
-    # Create the 11x11 probability grid (0 to 10 goals)
+    # Create the 11x11 probability grid (0 to 10 goals) . Hihgest ever is 10 goals in world cup, so 1 higher
     home_probs = poisson.pmf(np.arange(11), lambda_h)
     away_probs = poisson.pmf(np.arange(11), lambda_a)
     grid = np.outer(home_probs, away_probs)
     
-    # Calculate outcome probabilities
     home_win_prob = np.sum(np.tril(grid, -1))
     draw_prob = np.sum(np.diag(grid))
     away_win_prob = np.sum(np.triu(grid, 1))
     
-    print(f"\n--- Match Prediction: {home_team} vs {away_team} ---")
+    print(f"Match Prediction: {home_team} vs {away_team}")
     print(f"Latest Ratings: {home_team} ({home_elo:.1f}) | {away_team} ({away_elo:.1f})")
     print(f"Predicted Goals: {home_team} = {lambda_h:.3f} | {away_team} = {lambda_a:.3f}")
-    print(f"Win/Draw/Loss: {home_win_prob*100:.2f}% / {draw_prob*100:.2f}% / {away_win_prob*100:.2f}%")
+    print(f"Win/Draw/Loss Probability: {home_win_prob*100:.2f}% / {draw_prob*100:.2f}% / {away_win_prob*100:.2f}%")
     
     return home_win_prob, draw_prob, away_win_prob
 
