@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
 import joblib
+import itertools
+import random
 from pathlib import Path
 from collections import defaultdict #like a python dictionary  but more features
 
@@ -36,13 +38,13 @@ def get_current_elos(df): # function to extract elos of each team based on teh g
     for team in df['home_team'].unique():
         last_home = df[df['home_team'] == team].tail(1) # finds the last time they played
         if not last_home.empty:
-            latest_elos[team] = last_home['home_elo_post'].values[0]
+            latest_elos[team] = last_home['home_elo_pre'].values[0]
             
     for team in df['away_team'].unique():
         last_away = df[df['away_team'] == team].tail(1)
         if not last_away.empty:
             if team not in latest_elos or last_away['date'].values[0] > last_home['date'].values[0]:
-                latest_elos[team] = last_away['away_elo_post'].values[0]
+                latest_elos[team] = last_away['away_elo_pre'].values[0]
                 
     return latest_elos
 
@@ -81,7 +83,91 @@ def simulate_match(team1, team2, is_knockout=False):
     return score1, score2
 
 # Step 3: Group Stage Logic (simulate_group_stage)
+def simulate_group_stage(groups):
+    advancing_teams = []
+    third_place_teams = []
+    
+    for group_name, teams in groups.items():
+        stats = {}
+        for team in teams:
+            stats[team] = {
+                'Pts': 0,  # Points
+                'GD': 0,   # Goal Difference
+                'GF': 0    # Goals For
+            }
+
+
+        for team1, team2 in itertools.combinations(teams, 2): #python library used for simulating a round robin 
+            score1, score2 = simulate_match(team1, team2, is_knockout=False) # use simulate match function to simulate each match
+            
+            stats[team1]['GF'] += score1
+            stats[team2]['GF'] += score2
+            stats[team1]['GD'] += (score1 - score2)
+            stats[team2]['GD'] += (score2 - score1)
+            
+            if score1 > score2: #checking scores to add points respectively. 
+                stats[team1]['Pts'] += 3
+            elif score2 > score1:
+                stats[team2]['Pts'] += 3
+            else:
+                stats[team1]['Pts'] += 1
+                stats[team2]['Pts'] += 1
+                
+        sorted_teams = sorted(teams, key=lambda t: (stats[t]['Pts'], stats[t]['GD'], stats[t]['GF']), reverse=True)
+        
+        advancing_teams.extend(sorted_teams[:2])
+        third_place_teams.append({
+            'team': sorted_teams[2],
+            'Pts': stats[sorted_teams[2]]['Pts'],
+            'GD': stats[sorted_teams[2]]['GD'],
+            'GF': stats[sorted_teams[2]]['GF']
+        })
+        
+    third_place_teams.sort(key=lambda x: (x['Pts'], x['GD'], x['GF']), reverse=True)
+    advancing_teams.extend([x['team'] for x in third_place_teams[:8]])
+    
+    return advancing_teams
 
 # Step 4: Knockout Stage Logic (simulate_knockout_stage)
+def simulate_knockout_stage(teams):
+    random.shuffle(teams)
+    
+    current_round = teams
+    while len(current_round) > 1:
+        next_round = []
+        for i in range(0, len(current_round), 2):
+            team1 = current_round[i]
+            team2 = current_round[i+1]
+            score1, score2 = simulate_match(team1, team2, is_knockout=True)
+            if score1 > score2:
+                next_round.append(team1)
+            else:
+                next_round.append(team2)
+        current_round = next_round
+        
+    return current_round[0] # Returns the tournament winner
 
 # Step 5: The Monte Carlo Loop (main execution)
+def run_monte_carlo(N=10000):
+    wins = defaultdict(int)
+    for i in range(N):
+        if (i + 1) % 1000 == 0:
+            print(f"Simulating tournament {i+1}/{N}...")
+            
+        advancing = simulate_group_stage(GROUPS)
+        winner = simulate_knockout_stage(advancing)
+        wins[winner] += 1
+        
+    # Calculate win probabilities
+    results = []
+    for team, count in wins.items():
+        results.append((team, count / N * 100))
+        
+    results.sort(key=lambda x: x[1], reverse=True)
+    
+    print("\n=== TOP 10 TEAMS TO WIN THE 2026 WORLD CUP ===")
+    for idx, (team, prob) in enumerate(results[:10]):
+        print(f"{idx+1}. {team}: {prob:.2f}%")
+
+if __name__ == '__main__':
+    run_monte_carlo(10000)
