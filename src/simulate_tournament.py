@@ -33,19 +33,23 @@ GROUPS = {
     'L': ['England', 'Croatia', 'Ghana', 'Panama']
 }
 
-def get_current_elos(df): # function to extract elos of each team based on teh groups. 
+def get_current_elos(df): # function to extract elos of each team based on the groups. 
     latest_elos = {}
-    for team in df['home_team'].unique():
-        last_home = df[df['home_team'] == team].tail(1) # finds the last time they played
-        if not last_home.empty:
-            latest_elos[team] = last_home['home_elo_pre'].values[0]
+    latest_dates = {}
+    for row in df.itertuples():
+        # Home team Elo
+        home = row.home_team
+        date = row.date
+        if home not in latest_dates or date > latest_dates[home]:
+            latest_dates[home] = date
+            latest_elos[home] = row.home_elo_pre
             
-    for team in df['away_team'].unique():
-        last_away = df[df['away_team'] == team].tail(1)
-        if not last_away.empty:
-            if team not in latest_elos or last_away['date'].values[0] > last_home['date'].values[0]:
-                latest_elos[team] = last_away['away_elo_pre'].values[0]
-                
+        # Away team Elo
+        away = row.away_team
+        if away not in latest_dates or date > latest_dates[away]:
+            latest_dates[away] = date
+            latest_elos[away] = row.away_elo_pre
+            
     return latest_elos
 
 df = pd.read_csv(DATA_DIR / 'elo_results.csv', parse_dates=['date'])
@@ -168,6 +172,20 @@ def run_monte_carlo(N=10000):
     print("\n=== TOP 10 TEAMS TO WIN THE 2026 WORLD CUP ===")
     for idx, (team, prob) in enumerate(results[:10]):
         print(f"{idx+1}. {team}: {prob:.2f}%")
+        
+    return results
 
 if __name__ == '__main__':
-    run_monte_carlo(10000)
+    results = run_monte_carlo(10000)
+    
+    # Save results to data/processed/simulation_results.csv
+    df_results = pd.DataFrame([
+        {
+            'Team': team,
+            'Win_Probability': prob,
+            'Elo': current_elos.get(team, 1500.0)
+        } for team, prob in results
+    ])
+    df_results.to_csv(DATA_DIR / 'simulation_results.csv', index=False)
+    print(f"Results successfully saved to {DATA_DIR / 'simulation_results.csv'}")
+
