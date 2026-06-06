@@ -1,0 +1,8 @@
+streamlit
+pandas
+numpy
+joblib
+scipy
+statsmodels
+python-dotenv
+requests
