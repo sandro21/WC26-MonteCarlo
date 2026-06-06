@@ -1,4 +1,4 @@
-rname: Daily World Cup Data Update
+name: Daily World Cup Data Update
 
 on:
   schedule:
