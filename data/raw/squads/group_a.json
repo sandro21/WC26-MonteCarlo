@@ -1,0 +1,440 @@
+{
+    "teams": [
+        {
+            "team_name": "Mexico",
+            "players": [
+                {
+                    "name": "Raúl Rangel",
+                    "value_eur_million": 6.5
+                },
+                {
+                    "name": "Carlos Acevedo",
+                    "value_eur_million": 2.8
+                },
+                {
+                    "name": "Guillermo Ochoa",
+                    "value_eur_million": 0.25
+                },
+                {
+                    "name": "Johan Vásquez",
+                    "value_eur_million": 12.0
+                },
+                {
+                    "name": "César Montes",
+                    "value_eur_million": 7.5
+                },
+                {
+                    "name": "Israel Reyes",
+                    "value_eur_million": 6.5
+                },
+                {
+                    "name": "Jorge Sánchez",
+                    "value_eur_million": 2.0
+                },
+                {
+                    "name": "Mateo Chávez",
+                    "value_eur_million": 4.0
+                },
+                {
+                    "name": "Jesús Gallardo",
+                    "value_eur_million": 2.8
+                },
+                {
+                    "name": "Luis Romo",
+                    "value_eur_million": 3.0
+                },
+                {
+                    "name": "Edson Álvarez",
+                    "value_eur_million": 15.0
+                },
+                {
+                    "name": "Érik Lira",
+                    "value_eur_million": 12.0
+                },
+                {
+                    "name": "Luis Chávez",
+                    "value_eur_million": 6.0
+                },
+                {
+                    "name": "Obed Vargas",
+                    "value_eur_million": 10.0
+                },
+                {
+                    "name": "Orbelín Pineda",
+                    "value_eur_million": 7.0
+                },
+                {
+                    "name": "Álvaro Fidalgo",
+                    "value_eur_million": 6.0
+                },
+                {
+                    "name": "Gilberto Mora",
+                    "value_eur_million": 10.0
+                },
+                {
+                    "name": "Brian Gutiérrez",
+                    "value_eur_million": 8.0
+                },
+                {
+                    "name": "Alexis Vega",
+                    "value_eur_million": 8.0
+                },
+                {
+                    "name": "César Huerta",
+                    "value_eur_million": 3.5
+                },
+                {
+                    "name": "Roberto Alvarado",
+                    "value_eur_million": 7.5
+                },
+                {
+                    "name": "Santiago Gimenez",
+                    "value_eur_million": 18.0
+                },
+                {
+                    "name": "Armando González",
+                    "value_eur_million": 15.0
+                },
+                {
+                    "name": "Julián Quiñones",
+                    "value_eur_million": 14.0
+                },
+                {
+                    "name": "Raúl Jiménez",
+                    "value_eur_million": 3.0
+                },
+                {
+                    "name": "Guillermo Martínez",
+                    "value_eur_million": 1.5
+                }
+            ]
+        },
+        {
+            "team_name": "South Africa",
+            "players": [
+                {
+                    "name": "Sipho Chaine",
+                    "value_eur_million": 1.6
+                },
+                {
+                    "name": "Ricardo Goss",
+                    "value_eur_million": 0.35
+                },
+                {
+                    "name": "Ronwen Williams",
+                    "value_eur_million": 1.2
+                },
+                {
+                    "name": "Mbekezeli Mbokazi",
+                    "value_eur_million": 3.5
+                },
+                {
+                    "name": "Ime Okon",
+                    "value_eur_million": 2.0
+                },
+                {
+                    "name": "Olwethu Makhanya",
+                    "value_eur_million": 2.0
+                },
+                {
+                    "name": "Nkosinathi Sibisi",
+                    "value_eur_million": 1.6
+                },
+                {
+                    "name": "Khulumani Ndamane",
+                    "value_eur_million": 1.2
+                },
+                {
+                    "name": "Samukele Kabini",
+                    "value_eur_million": 2.5
+                },
+                {
+                    "name": "Aubrey Modiba",
+                    "value_eur_million": 1.8
+                },
+                {
+                    "name": "Bradley Cross",
+                    "value_eur_million": 1.0
+                },
+                {
+                    "name": "Thabang Matuludi",
+                    "value_eur_million": 1.2
+                },
+                {
+                    "name": "Khuliso Mudau",
+                    "value_eur_million": 1.2
+                },
+                {
+                    "name": "Kamogelo Sebelebele",
+                    "value_eur_million": 1.2
+                },
+                {
+                    "name": "Teboho Mokoena",
+                    "value_eur_million": 2.8
+                },
+                {
+                    "name": "Thalente Mbatha",
+                    "value_eur_million": 2.0
+                },
+                {
+                    "name": "Jayden Adams",
+                    "value_eur_million": 1.8
+                },
+                {
+                    "name": "Yaya Sithole",
+                    "value_eur_million": 0.6
+                },
+                {
+                    "name": "Themba Zwane",
+                    "value_eur_million": 0.25
+                },
+                {
+                    "name": "Relebohile Mofokeng",
+                    "value_eur_million": 3.0
+                },
+                {
+                    "name": "Oswin Appollis",
+                    "value_eur_million": 2.5
+                },
+                {
+                    "name": "Tshepang Moremi",
+                    "value_eur_million": 1.4
+                },
+                {
+                    "name": "Thapelo Maseko",
+                    "value_eur_million": 0.75
+                },
+                {
+                    "name": "Lyle Foster",
+                    "value_eur_million": 8.0
+                },
+                {
+                    "name": "Iqraam Rayners",
+                    "value_eur_million": 2.8
+                },
+                {
+                    "name": "Evidence Makgopa",
+                    "value_eur_million": 1.4
+                }
+            ]
+        },
+        {
+            "team_name": "Korea Republic",
+            "players": [
+                {
+                    "name": "Seung-gyu Kim",
+                    "value_eur_million": 0.5
+                },
+                {
+                    "name": "Min-jae Kim",
+                    "value_eur_million": 20.0
+                },
+                {
+                    "name": "Han-beom Lee",
+                    "value_eur_million": 3.0
+                },
+                {
+                    "name": "Tae-hyeon Kim",
+                    "value_eur_million": 1.2
+                },
+                {
+                    "name": "Gi-hyuk Lee",
+                    "value_eur_million": 0.8
+                },
+                {
+                    "name": "Wi-je Cho",
+                    "value_eur_million": 0.55
+                },
+                {
+                    "name": "Tae-seok Lee",
+                    "value_eur_million": 2.0
+                },
+                {
+                    "name": "Young-woo Seol",
+                    "value_eur_million": 6.5
+                },
+                {
+                    "name": "Moon-hwan Kim",
+                    "value_eur_million": 0.75
+                },
+                {
+                    "name": "In-beom Hwang",
+                    "value_eur_million": 7.0
+                },
+                {
+                    "name": "Jin-seob Park",
+                    "value_eur_million": 1.0
+                },
+                {
+                    "name": "Jens Castrop",
+                    "value_eur_million": 10.0
+                },
+                {
+                    "name": "Seung-ho Paik",
+                    "value_eur_million": 2.0
+                },
+                {
+                    "name": "Jin-gyu Kim",
+                    "value_eur_million": 1.2
+                },
+                {
+                    "name": "Kang-in Lee",
+                    "value_eur_million": 28.0
+                },
+                {
+                    "name": "Jun-ho Bae",
+                    "value_eur_million": 4.0
+                },
+                {
+                    "name": "Jae-sung Lee",
+                    "value_eur_million": 2.0
+                },
+                {
+                    "name": "Dong-gyeong Lee",
+                    "value_eur_million": 1.6
+                },
+                {
+                    "name": "Heung-min Son",
+                    "value_eur_million": 15.0
+                },
+                {
+                    "name": "Ji-sung Eom",
+                    "value_eur_million": 1.8
+                },
+                {
+                    "name": "Hyun-jun Yang",
+                    "value_eur_million": 5.0
+                },
+                {
+                    "name": "Hyeon-gyu Oh",
+                    "value_eur_million": 15.0
+                },
+                {
+                    "name": "Hee-chan Hwang",
+                    "value_eur_million": 6.0
+                },
+                {
+                    "name": "Cho Gue-sung",
+                    "value_eur_million": 2.5
+                },
+                {
+                    "name": "Bum-keun Song",
+                    "value_eur_million": 1.0
+                },
+                {
+                    "name": "Hyeon-woo Jo",
+                    "value_eur_million": 1.0
+                }
+            ]
+        },
+        {
+            "team_name": "Czechia",
+            "players": [
+                {
+                    "name": "Jindrich Stanek",
+                    "value_eur_million": 2.0
+                },
+                {
+                    "name": "Ladislav Krejcí",
+                    "value_eur_million": 22.0
+                },
+                {
+                    "name": "Robin Hranac",
+                    "value_eur_million": 10.0
+                },
+                {
+                    "name": "Stepan Chaloupek",
+                    "value_eur_million": 10.0
+                },
+                {
+                    "name": "David Zima",
+                    "value_eur_million": 7.0
+                },
+                {
+                    "name": "Tomas Holes",
+                    "value_eur_million": 1.0
+                },
+                {
+                    "name": "Jaroslav Zelený",
+                    "value_eur_million": 0.6
+                },
+                {
+                    "name": "David Jurásek",
+                    "value_eur_million": 5.0
+                },
+                {
+                    "name": "Vladimír Coufal",
+                    "value_eur_million": 2.5
+                },
+                {
+                    "name": "Tomas Soucek",
+                    "value_eur_million": 10.0
+                },
+                {
+                    "name": "Michal Sadílek",
+                    "value_eur_million": 8.0
+                },
+                {
+                    "name": "Lukas Cerv",
+                    "value_eur_million": 6.0
+                },
+                {
+                    "name": "Hugo Sochurek",
+                    "value_eur_million": 3.5
+                },
+                {
+                    "name": "Alexandr Sojka",
+                    "value_eur_million": 2.3
+                },
+                {
+                    "name": "Vladimír Darida",
+                    "value_eur_million": 0.375
+                },
+                {
+                    "name": "David Doudĕra",
+                    "value_eur_million": 3.5
+                },
+                {
+                    "name": "Pavel Sulc",
+                    "value_eur_million": 20.0
+                },
+                {
+                    "name": "Denis Visinsky",
+                    "value_eur_million": 3.0
+                },
+                {
+                    "name": "Lukas Provod",
+                    "value_eur_million": 8.0
+                },
+                {
+                    "name": "Patrik Schick",
+                    "value_eur_million": 18.0
+                },
+                {
+                    "name": "Adam Hlozek",
+                    "value_eur_million": 10.0
+                },
+                {
+                    "name": "Mojmír Chytil",
+                    "value_eur_million": 4.0
+                },
+                {
+                    "name": "Jan Kuchta",
+                    "value_eur_million": 2.7
+                },
+                {
+                    "name": "Tomas Chory",
+                    "value_eur_million": 2.7
+                },
+                {
+                    "name": "Matej Kovar",
+                    "value_eur_million": 7.0
+                },
+                {
+                    "name": "Antonin Barak",
+                    "value_eur_million": 4.5
+                }
+            ]
+        }
+    ]
+}
