@@ -103,10 +103,12 @@ def simulate_match(team1, team2, is_knockout=False):
     return score1, score2
 
 # Step 3: Group Stage Logic (simulate_group_stage)
-def simulate_group_stage(groups):
+def simulate_group_stage(groups, log_bracket=False, bracket_log=None):
     advancing_teams = []
     third_place_teams = []
-    
+    if log_bracket and bracket_log is not None:
+        bracket_log["Group Stage"] = []
+        
     for group_name, teams in groups.items():
         stats = {}
         for team in teams:
@@ -119,6 +121,9 @@ def simulate_group_stage(groups):
 
         for team1, team2 in itertools.combinations(teams, 2): #python library used for simulating a round robin 
             score1, score2 = simulate_match(team1, team2, is_knockout=False) # use simulate match function to simulate each match
+            
+            if log_bracket and bracket_log is not None:
+                bracket_log["Group Stage"].append(f"[Group {group_name}] {team1} {score1} - {score2} {team2}")
             
             stats[team1]['GF'] += score1
             stats[team2]['GF'] += score2
@@ -149,11 +154,12 @@ def simulate_group_stage(groups):
     return advancing_teams
 
 # Step 4: Knockout Stage Logic (simulate_knockout_stage)
-def simulate_knockout_stage(teams, log_bracket=False):
+def simulate_knockout_stage(teams, log_bracket=False, bracket_log=None):
     random.shuffle(teams)
     
     current_round = teams
-    bracket_log = {}
+    if bracket_log is None:
+        bracket_log = {}
     round_names = {32: "Round of 32", 16: "Round of 16", 8: "Quarterfinals", 4: "Semifinals", 2: "Final"}
     
     while len(current_round) > 1:
@@ -176,11 +182,6 @@ def simulate_knockout_stage(teams, log_bracket=False):
                 next_round.append(team2)
         current_round = next_round
         
-    if log_bracket:
-        import json
-        with open(DATA_DIR / 'sample_bracket.json', 'w', encoding='utf-8') as f:
-            json.dump(bracket_log, f, indent=4)
-        
     return current_round[0] # Returns the tournament winner
 
 # Step 5: The Monte Carlo Loop (main execution)
@@ -190,11 +191,17 @@ def run_monte_carlo(N=10000):
         if (i + 1) % 1000 == 0:
             print(f"Simulating tournament {i+1}/{N}...")
             
-        advancing = simulate_group_stage(GROUPS)
-        
         # Log the bracket only on the very first iteration
         log_this_bracket = (i == 0)
-        winner = simulate_knockout_stage(advancing, log_bracket=log_this_bracket)
+        bracket_log = {} if log_this_bracket else None
+        
+        advancing = simulate_group_stage(GROUPS, log_bracket=log_this_bracket, bracket_log=bracket_log)
+        winner = simulate_knockout_stage(advancing, log_bracket=log_this_bracket, bracket_log=bracket_log)
+        
+        if log_this_bracket:
+            import json
+            with open(DATA_DIR / 'sample_bracket.json', 'w', encoding='utf-8') as f:
+                json.dump(bracket_log, f, indent=4)
         
         wins[winner] += 1
         

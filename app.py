@@ -106,7 +106,7 @@ col_m3.metric(label="Total Matches Processed", value="49,287")
 st.markdown("---")
 
 # --- Tabs Layout ---
-tab1, tab2, tab3 = st.tabs(["🏆 Tournament Forecast", "⚔️ Match Predictor", "ブラケット | Bracket Explorer"])
+tab1, tab2, tab3 = st.tabs(["🏆 Tournament Forecast", "⚔️ Match Predictor", "📊 Bracket Explorer"])
 
 # --- Tab 1: Tournament Forecast (Lead Table) ---
 with tab1:
@@ -237,7 +237,7 @@ with tab2:
 # --- Tab 3: Bracket Explorer ---
 with tab3:
     st.markdown("##### 🏆 Sample Tournament Bracket")
-    st.markdown("A match-by-match log of a complete simulation run from the Round of 32 to the Final.")
+    st.markdown("A match-by-match log of a complete simulation run from the Group Stage to the Final.")
     
     bracket_path = DATA_DIR / 'sample_bracket.json'
     if os.path.exists(bracket_path):
@@ -245,7 +245,7 @@ with tab3:
         with open(bracket_path, 'r', encoding='utf-8') as f:
             bracket_data = json.load(f)
             
-        rounds_order = ["Round of 32", "Round of 16", "Quarterfinals", "Semifinals", "Final"]
+        rounds_order = ["Group Stage", "Round of 32", "Round of 16", "Quarterfinals", "Semifinals", "Final"]
         
         for round_name in rounds_order:
             if round_name in bracket_data:
