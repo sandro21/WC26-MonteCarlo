@@ -55,24 +55,31 @@ def get_current_elos(df): # function to extract elos of each team based on the g
 df = pd.read_csv(DATA_DIR / 'elo_results.csv', parse_dates=['date'])
 current_elos = get_current_elos(df)
 
-# Step 1: Load Market Value Index (MVI) data
 try:
     mvi_df = pd.read_csv(DATA_DIR / 'squad_features.csv')
-    # Create a dictionary mapping team_name directly to their market_value_index
     mvi_data = dict(zip(mvi_df['team_name'], mvi_df['market_value_index']))
 except FileNotFoundError:
     print("Warning: squad_features.csv not found. All MVIs will default to 1.0")
     mvi_data = {}
 
-# Step 2: Core Match Simulation (simulate_match)
 def simulate_match(team1, team2, is_knockout=False):
     swapped = False
     if team2 in HOSTS and team1 not in HOSTS:
         team1, team2 = team2, team1
         swapped = True
-        
-    elo1 = current_elos.get(team1, 1500.0) #sets default o 1500, shouldnt happen tho. 
-    elo2 = current_elos.get(team2, 1500.0)
+    
+    elo1_base = current_elos.get(team1, 1500.0) #sets default o 1500, shouldnt happen tho. 
+    elo2_base = current_elos.get(team2, 1500.0)
+    
+
+    # this is the calcaultions for the elo
+    #defualt is 1.0. max is 0.01
+    team1_mvi = max(float(mvi_data.get(team1, 1.0)), 0.01)
+    team2_mvi = max(float(mvi_data.get(team2, 1.0)), 0.01)
+    
+    #adjust elo based on market value
+    elo1 = elo1_base + (50 * np.log(team1_mvi))
+    elo2 = elo2_base + (50 * np.log(team2_mvi))
     
     elo_diff = elo1 - elo2
     
