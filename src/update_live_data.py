@@ -59,6 +59,7 @@ def process_and_update(matches, target_date):
             
         status = match.get('fixture', {}).get('status', {}).get('short', '')
         if status not in ['FT', 'AET', 'PEN']:
+            print(f"Skipping match {home_team} vs {away_team}: Status is '{status}' (Not Finished).")
             continue
             
         home_team = match.get('teams', {}).get('home', {}).get('name', '')
