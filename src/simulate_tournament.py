@@ -149,21 +149,37 @@ def simulate_group_stage(groups):
     return advancing_teams
 
 # Step 4: Knockout Stage Logic (simulate_knockout_stage)
-def simulate_knockout_stage(teams):
+def simulate_knockout_stage(teams, log_bracket=False):
     random.shuffle(teams)
     
     current_round = teams
+    bracket_log = {}
+    round_names = {32: "Round of 32", 16: "Round of 16", 8: "Quarterfinals", 4: "Semifinals", 2: "Final"}
+    
     while len(current_round) > 1:
         next_round = []
+        round_name = round_names.get(len(current_round), f"Round of {len(current_round)}")
+        if log_bracket:
+            bracket_log[round_name] = []
+            
         for i in range(0, len(current_round), 2):
             team1 = current_round[i]
             team2 = current_round[i+1]
             score1, score2 = simulate_match(team1, team2, is_knockout=True)
+            
+            if log_bracket:
+                bracket_log[round_name].append(f"{team1} {score1} - {score2} {team2}")
+                
             if score1 > score2:
                 next_round.append(team1)
             else:
                 next_round.append(team2)
         current_round = next_round
+        
+    if log_bracket:
+        import json
+        with open(DATA_DIR / 'sample_bracket.json', 'w', encoding='utf-8') as f:
+            json.dump(bracket_log, f, indent=4)
         
     return current_round[0] # Returns the tournament winner
 
@@ -175,7 +191,11 @@ def run_monte_carlo(N=10000):
             print(f"Simulating tournament {i+1}/{N}...")
             
         advancing = simulate_group_stage(GROUPS)
-        winner = simulate_knockout_stage(advancing)
+        
+        # Log the bracket only on the very first iteration
+        log_this_bracket = (i == 0)
+        winner = simulate_knockout_stage(advancing, log_bracket=log_this_bracket)
+        
         wins[winner] += 1
         
     # Calculate win probabilities
