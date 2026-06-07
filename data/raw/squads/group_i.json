@@ -1,3 +1,440 @@
-[
-  
-]
+{
+    "teams": [
+        {
+            "team_name": "France",
+            "players": [
+                {
+                    "name": "Mike Maignan",
+                    "value_eur_million": 40.0
+                },
+                {
+                    "name": "Alphonse Areola",
+                    "value_eur_million": 10.0
+                },
+                {
+                    "name": "Brice Samba",
+                    "value_eur_million": 15.0
+                },
+                {
+                    "name": "Lucas Digne",
+                    "value_eur_million": 15.0
+                },
+                {
+                    "name": "Malo Gusto",
+                    "value_eur_million": 35.0
+                },
+                {
+                    "name": "Lucas Hernandez",
+                    "value_eur_million": 40.0
+                },
+                {
+                    "name": "Theo Hernandez",
+                    "value_eur_million": 60.0
+                },
+                {
+                    "name": "Ibrahima Konate",
+                    "value_eur_million": 45.0
+                },
+                {
+                    "name": "Jules Kounde",
+                    "value_eur_million": 50.0
+                },
+                {
+                    "name": "Maxence Lacroix",
+                    "value_eur_million": 20.0
+                },
+                {
+                    "name": "William Saliba",
+                    "value_eur_million": 80.0
+                },
+                {
+                    "name": "Dayot Upamecano",
+                    "value_eur_million": 45.0
+                },
+                {
+                    "name": "N'Golo Kante",
+                    "value_eur_million": 10.0
+                },
+                {
+                    "name": "Manu Kone",
+                    "value_eur_million": 25.0
+                },
+                {
+                    "name": "Adrien Rabiot",
+                    "value_eur_million": 35.0
+                },
+                {
+                    "name": "Aurelien Tchouameni",
+                    "value_eur_million": 90.0
+                },
+                {
+                    "name": "Warren Zaire-Emery",
+                    "value_eur_million": 60.0
+                },
+                {
+                    "name": "Maghnes Akliouche",
+                    "value_eur_million": 25.0
+                },
+                {
+                    "name": "Bradley Barcola",
+                    "value_eur_million": 50.0
+                },
+                {
+                    "name": "Rayan Cherki",
+                    "value_eur_million": 25.0
+                },
+                {
+                    "name": "Ousmane Dembele",
+                    "value_eur_million": 60.0
+                },
+                {
+                    "name": "Desire Doue",
+                    "value_eur_million": 30.0
+                },
+                {
+                    "name": "Jean-Philippe Mateta",
+                    "value_eur_million": 20.0
+                },
+                {
+                    "name": "Kylian Mbappe",
+                    "value_eur_million": 180.0
+                },
+                {
+                    "name": "Michael Olise",
+                    "value_eur_million": 55.0
+                },
+                {
+                    "name": "Marcus Thuram",
+                    "value_eur_million": 65.0
+                }
+            ]
+        },
+        {
+            "team_name": "Senegal",
+            "players": [
+                {
+                    "name": "Edouard Mendy",
+                    "value_eur_million": 10.0
+                },
+                {
+                    "name": "Mory Diaw",
+                    "value_eur_million": 2.0
+                },
+                {
+                    "name": "Yehvann Diouf",
+                    "value_eur_million": 5.0
+                },
+                {
+                    "name": "Kalidou Koulibaly",
+                    "value_eur_million": 15.0
+                },
+                {
+                    "name": "Moussa Niakhate",
+                    "value_eur_million": 16.0
+                },
+                {
+                    "name": "Abdoulaye Seck",
+                    "value_eur_million": 1.5
+                },
+                {
+                    "name": "Ismail Jakobs",
+                    "value_eur_million": 8.0
+                },
+                {
+                    "name": "Krepin Diatta",
+                    "value_eur_million": 12.0
+                },
+                {
+                    "name": "Antoine Mendy",
+                    "value_eur_million": 3.0
+                },
+                {
+                    "name": "El Hadji Malick Diouf",
+                    "value_eur_million": 5.0
+                },
+                {
+                    "name": "Mamadou Sarr",
+                    "value_eur_million": 10.0
+                },
+                {
+                    "name": "Idrissa Gana Gueye",
+                    "value_eur_million": 2.0
+                },
+                {
+                    "name": "Pape Matar Sarr",
+                    "value_eur_million": 45.0
+                },
+                {
+                    "name": "Lamine Camara",
+                    "value_eur_million": 15.0
+                },
+                {
+                    "name": "Pape Gueye",
+                    "value_eur_million": 8.0
+                },
+                {
+                    "name": "Habib Diarra",
+                    "value_eur_million": 18.0
+                },
+                {
+                    "name": "Pathe Ciss",
+                    "value_eur_million": 2.5
+                },
+                {
+                    "name": "Sadio Mane",
+                    "value_eur_million": 15.0
+                },
+                {
+                    "name": "Nicolas Jackson",
+                    "value_eur_million": 35.0
+                },
+                {
+                    "name": "Ismaila Sarr",
+                    "value_eur_million": 18.0
+                },
+                {
+                    "name": "Iliman Ndiaye",
+                    "value_eur_million": 18.0
+                },
+                {
+                    "name": "Assane Diao",
+                    "value_eur_million": 15.0
+                },
+                {
+                    "name": "Ibrahim Mbaye",
+                    "value_eur_million": 2.0
+                },
+                {
+                    "name": "Bamba Dieng",
+                    "value_eur_million": 5.0
+                },
+                {
+                    "name": "Cherif Ndiaye",
+                    "value_eur_million": 4.0
+                },
+                {
+                    "name": "Boulaye Dia",
+                    "value_eur_million": 14.0
+                }
+            ]
+        },
+        {
+            "team_name": "Iraq",
+            "players": [
+                {
+                    "name": "Fahad Talib",
+                    "value_eur_million": 0.5
+                },
+                {
+                    "name": "Jalal Hassan",
+                    "value_eur_million": 0.4
+                },
+                {
+                    "name": "Ahmed Basil",
+                    "value_eur_million": 0.3
+                },
+                {
+                    "name": "Hussein Ali",
+                    "value_eur_million": 1.0
+                },
+                {
+                    "name": "Manaf Younis",
+                    "value_eur_million": 0.5
+                },
+                {
+                    "name": "Mustafa Saadoon",
+                    "value_eur_million": 0.4
+                },
+                {
+                    "name": "Ahmed Hassan Makenzie",
+                    "value_eur_million": 0.3
+                },
+                {
+                    "name": "Zaid Tahseen",
+                    "value_eur_million": 0.5
+                },
+                {
+                    "name": "Rebin Sulaka",
+                    "value_eur_million": 0.4
+                },
+                {
+                    "name": "Akam Hashim",
+                    "value_eur_million": 0.2
+                },
+                {
+                    "name": "Merchas Doski",
+                    "value_eur_million": 0.8
+                },
+                {
+                    "name": "Zaid Ismail",
+                    "value_eur_million": 0.2
+                },
+                {
+                    "name": "Frans Putros",
+                    "value_eur_million": 0.4
+                },
+                {
+                    "name": "Amir Al-Ammari",
+                    "value_eur_million": 1.0
+                },
+                {
+                    "name": "Kevin Yakob",
+                    "value_eur_million": 0.8
+                },
+                {
+                    "name": "Zidane Iqbal",
+                    "value_eur_million": 1.0
+                },
+                {
+                    "name": "Aimar Sher",
+                    "value_eur_million": 1.5
+                },
+                {
+                    "name": "Ibrahim Bayesh",
+                    "value_eur_million": 0.6
+                },
+                {
+                    "name": "Ahmed Qasem",
+                    "value_eur_million": 2.5
+                },
+                {
+                    "name": "Youssef Amyn",
+                    "value_eur_million": 1.0
+                },
+                {
+                    "name": "Marko Farji",
+                    "value_eur_million": 0.5
+                },
+                {
+                    "name": "Aymen Hussein",
+                    "value_eur_million": 0.8
+                },
+                {
+                    "name": "Mohanad Ali",
+                    "value_eur_million": 0.5
+                },
+                {
+                    "name": "Ali Jasim",
+                    "value_eur_million": 0.6
+                },
+                {
+                    "name": "Danilo Al-Saed",
+                    "value_eur_million": 1.5
+                },
+                {
+                    "name": "Ali Al-Hamadi",
+                    "value_eur_million": 1.5
+                }
+            ]
+        },
+        {
+            "team_name": "Norway",
+            "players": [
+                {
+                    "name": "Orjan Nyland",
+                    "value_eur_million": 1.5
+                },
+                {
+                    "name": "Egil Selvik",
+                    "value_eur_million": 1.0
+                },
+                {
+                    "name": "Mathias Dyngeland",
+                    "value_eur_million": 0.8
+                },
+                {
+                    "name": "Kristoffer Ajer",
+                    "value_eur_million": 15.0
+                },
+                {
+                    "name": "Leo Ostigard",
+                    "value_eur_million": 8.0
+                },
+                {
+                    "name": "Andreas Hanche-Olsen",
+                    "value_eur_million": 5.0
+                },
+                {
+                    "name": "Stefan Strandberg",
+                    "value_eur_million": 0.5
+                },
+                {
+                    "name": "Julian Ryerson",
+                    "value_eur_million": 15.0
+                },
+                {
+                    "name": "Marcus Holmgren Pedersen",
+                    "value_eur_million": 6.0
+                },
+                {
+                    "name": "Birger Meling",
+                    "value_eur_million": 4.0
+                },
+                {
+                    "name": "David Moller Wolfe",
+                    "value_eur_million": 3.0
+                },
+                {
+                    "name": "Martin Ødegaard",
+                    "value_eur_million": 110.0
+                },
+                {
+                    "name": "Sander Berge",
+                    "value_eur_million": 20.0
+                },
+                {
+                    "name": "Fredrik Aursnes",
+                    "value_eur_million": 20.0
+                },
+                {
+                    "name": "Kristian Thorstvedt",
+                    "value_eur_million": 8.0
+                },
+                {
+                    "name": "Patrick Berg",
+                    "value_eur_million": 6.0
+                },
+                {
+                    "name": "Hugo Vetlesen",
+                    "value_eur_million": 5.0
+                },
+                {
+                    "name": "Oscar Bobb",
+                    "value_eur_million": 25.0
+                },
+                {
+                    "name": "Antonio Nusa",
+                    "value_eur_million": 20.0
+                },
+                {
+                    "name": "Aron Donnum",
+                    "value_eur_million": 3.0
+                },
+                {
+                    "name": "Osame Sahraoui",
+                    "value_eur_million": 8.0
+                },
+                {
+                    "name": "Erling Haaland",
+                    "value_eur_million": 180.0
+                },
+                {
+                    "name": "Alexander Sørloth",
+                    "value_eur_million": 25.0
+                },
+                {
+                    "name": "Jorgen Strand Larsen",
+                    "value_eur_million": 15.0
+                },
+                {
+                    "name": "Bård Finne",
+                    "value_eur_million": 1.5
+                },
+                {
+                    "name": "Ola Solbakken",
+                    "value_eur_million": 2.5
+                }
+            ]
+        }
+    ]
+}

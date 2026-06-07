@@ -1,4 +1,5 @@
 import json
+import csv
 from pathlib import Path
 
 def load_squad_data(data_dir: str = "data/raw/squads"):
@@ -53,15 +54,70 @@ def extract_team_features(teams_data):
         
     return processed_teams
 
+def calculate_market_value_index(team_features_list):
+    """
+    Calculates the Market Value Index (MVI) for each team.
+    """
+    if not team_features_list:
+        return []
+        
+    total_global_xi_value = sum(team['starting_xi_value'] for team in team_features_list)
+    
+    global_average_xi = total_global_xi_value / len(team_features_list)
+    
+    for team in team_features_list:
+        if global_average_xi > 0:
+            mvi = team['starting_xi_value'] / global_average_xi
+        else:
+            mvi = 0.0
+            
+        team['market_value_index'] = round(mvi, 3)
+        
+    return team_features_list
+
+def export_to_csv(team_features_list, output_path: str = "data/processed/squad_features.csv"):
+    """
+    Saves the extracted features to a CSV file.
+    """
+    if not team_features_list:
+        return
+        
+    base_dir = Path(__file__).parent.parent
+    path = base_dir / output_path
+    
+    path.parent.mkdir(parents=True, exist_ok=True)
+    
+    fieldnames = [
+        'team_name', 
+        'total_squad_value', 
+        'starting_xi_value', 
+        'market_value_index', 
+        'top_player_name', 
+        'top_player_value'
+    ]
+    
+    with open(path, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        
+        writer.writeheader()
+        
+        writer.writerows(team_features_list)
+        
+    print(f"Data successfully saved to: {path.relative_to(base_dir)}")
+
 if __name__ == "__main__":
     teams = load_squad_data()
     print(f"Loaded {len(teams)} teams.")
     
     if teams:
         features = extract_team_features(teams)
+        final_features = calculate_market_value_index(features)
         
-        first_team_features = features[0]
-        print(f"\nExtracted Features for {first_team_features['team_name']}:")
-        print(f"  Total Squad Value: €{first_team_features['total_squad_value']}m")
-        print(f"  Starting XI Value: €{first_team_features['starting_xi_value']}m")
-        print(f"  Top Player: {first_team_features['top_player_name']} (€{first_team_features['top_player_value']}m)")
+        first_team = final_features[0]
+        print(f"\nFinal Features for {first_team['team_name']}:")
+        print(f"  Total Squad Value: €{first_team['total_squad_value']}m")
+        print(f"  Starting XI Value: €{first_team['starting_xi_value']}m")
+        print(f"  Top Player: {first_team['top_player_name']} (€{first_team['top_player_value']}m)")
+        print(f"  Market Value Index (MVI): {first_team['market_value_index']}\n")
+        
+        export_to_csv(final_features)

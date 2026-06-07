@@ -55,6 +55,15 @@ def get_current_elos(df): # function to extract elos of each team based on the g
 df = pd.read_csv(DATA_DIR / 'elo_results.csv', parse_dates=['date'])
 current_elos = get_current_elos(df)
 
+# Step 1: Load Market Value Index (MVI) data
+try:
+    mvi_df = pd.read_csv(DATA_DIR / 'squad_features.csv')
+    # Create a dictionary mapping team_name directly to their market_value_index
+    mvi_data = dict(zip(mvi_df['team_name'], mvi_df['market_value_index']))
+except FileNotFoundError:
+    print("Warning: squad_features.csv not found. All MVIs will default to 1.0")
+    mvi_data = {}
+
 # Step 2: Core Match Simulation (simulate_match)
 def simulate_match(team1, team2, is_knockout=False):
     swapped = False
