@@ -1,3 +1,440 @@
-[
-  
-]
+{
+    "teams": [
+        {
+            "team_name": "Spain",
+            "players": [
+                {
+                    "name": "Joan García",
+                    "value_eur_million": 45.0
+                },
+                {
+                    "name": "David Raya",
+                    "value_eur_million": 30.0
+                },
+                {
+                    "name": "Unai Simón",
+                    "value_eur_million": 22.0
+                },
+                {
+                    "name": "Pau Cubarsí",
+                    "value_eur_million": 80.0
+                },
+                {
+                    "name": "Eric García",
+                    "value_eur_million": 40.0
+                },
+                {
+                    "name": "Marc Pubill",
+                    "value_eur_million": 35.0
+                },
+                {
+                    "name": "Aymeric Laporte",
+                    "value_eur_million": 8.0
+                },
+                {
+                    "name": "Marc Cucurella",
+                    "value_eur_million": 50.0
+                },
+                {
+                    "name": "Alejandro Grimaldo",
+                    "value_eur_million": 20.0
+                },
+                {
+                    "name": "Pedro Porro",
+                    "value_eur_million": 35.0
+                },
+                {
+                    "name": "Marcos Llorente",
+                    "value_eur_million": 20.0
+                },
+                {
+                    "name": "Martín Zubimendi",
+                    "value_eur_million": 75.0
+                },
+                {
+                    "name": "Rodri",
+                    "value_eur_million": 50.0
+                },
+                {
+                    "name": "Pedri",
+                    "value_eur_million": 150.0
+                },
+                {
+                    "name": "Fabián Ruiz",
+                    "value_eur_million": 30.0
+                },
+                {
+                    "name": "Gavi",
+                    "value_eur_million": 30.0
+                },
+                {
+                    "name": "Mikel Merino",
+                    "value_eur_million": 25.0
+                },
+                {
+                    "name": "Dani Olmo",
+                    "value_eur_million": 60.0
+                },
+                {
+                    "name": "Álex Baena",
+                    "value_eur_million": 40.0
+                },
+                {
+                    "name": "Nico Williams",
+                    "value_eur_million": 40.0
+                },
+                {
+                    "name": "Víctor Muñoz",
+                    "value_eur_million": 30.0
+                },
+                {
+                    "name": "Lamine Yamal",
+                    "value_eur_million": 200.0
+                },
+                {
+                    "name": "Yéremy Pino",
+                    "value_eur_million": 30.0
+                },
+                {
+                    "name": "Ferran Torres",
+                    "value_eur_million": 50.0
+                },
+                {
+                    "name": "Mikel Oyarzabal",
+                    "value_eur_million": 25.0
+                },
+                {
+                    "name": "Borja Iglesias",
+                    "value_eur_million": 2.8
+                }
+            ]
+        },
+        {
+            "team_name": "Uruguay",
+            "players": [
+                {
+                    "name": "Santiago Mele",
+                    "value_eur_million": 2.0
+                },
+                {
+                    "name": "Sergio Rochet",
+                    "value_eur_million": 1.8
+                },
+                {
+                    "name": "Fernando Muslera",
+                    "value_eur_million": 0.7
+                },
+                {
+                    "name": "Ronald Araújo",
+                    "value_eur_million": 20.0
+                },
+                {
+                    "name": "Santiago Bueno",
+                    "value_eur_million": 10.0
+                },
+                {
+                    "name": "José María Giménez",
+                    "value_eur_million": 9.0
+                },
+                {
+                    "name": "Sebastián Cáceres",
+                    "value_eur_million": 4.5
+                },
+                {
+                    "name": "Maxi Araújo",
+                    "value_eur_million": 35.0
+                },
+                {
+                    "name": "Mathías Olivera",
+                    "value_eur_million": 15.0
+                },
+                {
+                    "name": "Joaquín Piquerez",
+                    "value_eur_million": 12.0
+                },
+                {
+                    "name": "Juan Manuel Sanabria",
+                    "value_eur_million": 4.0
+                },
+                {
+                    "name": "Matías Viña",
+                    "value_eur_million": 3.5
+                },
+                {
+                    "name": "Guillermo Varela",
+                    "value_eur_million": 1.0
+                },
+                {
+                    "name": "Manuel Ugarte",
+                    "value_eur_million": 25.0
+                },
+                {
+                    "name": "Rodrigo Bentancur",
+                    "value_eur_million": 20.0
+                },
+                {
+                    "name": "Emiliano Martínez",
+                    "value_eur_million": 6.5
+                },
+                {
+                    "name": "Federico Valverde",
+                    "value_eur_million": 90.0
+                },
+                {
+                    "name": "Nicolás de la Cruz",
+                    "value_eur_million": 8.0
+                },
+                {
+                    "name": "Rodrigo Zalazar",
+                    "value_eur_million": 30.0
+                },
+                {
+                    "name": "Giorgian de Arrascaeta",
+                    "value_eur_million": 14.0
+                },
+                {
+                    "name": "Agustín Canobbio",
+                    "value_eur_million": 8.0
+                },
+                {
+                    "name": "Brian Rodríguez",
+                    "value_eur_million": 8.0
+                },
+                {
+                    "name": "Facundo Pellistri",
+                    "value_eur_million": 5.0
+                },
+                {
+                    "name": "Darwin Núñez",
+                    "value_eur_million": 20.0
+                },
+                {
+                    "name": "Federico Viñas",
+                    "value_eur_million": 4.0
+                },
+                {
+                    "name": "Rodrigo Aguirre",
+                    "value_eur_million": 2.3
+                }
+            ]
+        },
+        {
+            "team_name": "Saudi Arabia",
+            "players": [
+                {
+                    "name": "Nawaf Al-Aqidi",
+                    "value_eur_million": 0.65
+                },
+                {
+                    "name": "Mohammed Al-Owais",
+                    "value_eur_million": 0.275
+                },
+                {
+                    "name": "Ahmed Al-Kassar",
+                    "value_eur_million": 0.175
+                },
+                {
+                    "name": "Hassan Tambakti",
+                    "value_eur_million": 1.8
+                },
+                {
+                    "name": "Abdulelah Al-Amri",
+                    "value_eur_million": 1.4
+                },
+                {
+                    "name": "Jehad Thakri",
+                    "value_eur_million": 1.2
+                },
+                {
+                    "name": "Ali Lajami",
+                    "value_eur_million": 0.75
+                },
+                {
+                    "name": "Moteb Al-Harbi",
+                    "value_eur_million": 1.4
+                },
+                {
+                    "name": "Ayman Yahya",
+                    "value_eur_million": 1.2
+                },
+                {
+                    "name": "Hassan Kadesh",
+                    "value_eur_million": 0.275
+                },
+                {
+                    "name": "Saud Abdulhamid",
+                    "value_eur_million": 9.0
+                },
+                {
+                    "name": "Mohammed Abu Al-Shamat",
+                    "value_eur_million": 1.8
+                },
+                {
+                    "name": "Ali Majrashi",
+                    "value_eur_million": 1.4
+                },
+                {
+                    "name": "Nawaf Boushal",
+                    "value_eur_million": 1.4
+                },
+                {
+                    "name": "Ziyad Al-Johani",
+                    "value_eur_million": 0.8
+                },
+                {
+                    "name": "Abdullah Al-Khaibari",
+                    "value_eur_million": 0.75
+                },
+                {
+                    "name": "Musab Al-Juwayr",
+                    "value_eur_million": 6.0
+                },
+                {
+                    "name": "Nasser Al-Dawsari",
+                    "value_eur_million": 0.9
+                },
+                {
+                    "name": "Mohamed Kanno",
+                    "value_eur_million": 0.8
+                },
+                {
+                    "name": "Alaa Hejji",
+                    "value_eur_million": 0.3
+                },
+                {
+                    "name": "Khalid Al-Ghannam",
+                    "value_eur_million": 2.5
+                },
+                {
+                    "name": "Salem Al-Dawsari",
+                    "value_eur_million": 1.2
+                },
+                {
+                    "name": "Sultan Mandash",
+                    "value_eur_million": 0.35
+                },
+                {
+                    "name": "Firas Al-Buraikan",
+                    "value_eur_million": 3.5
+                },
+                {
+                    "name": "Saleh Al-Shehri",
+                    "value_eur_million": 0.5
+                },
+                {
+                    "name": "Abdullah Al-Hamdan",
+                    "value_eur_million": 0.35
+                }
+            ]
+        },
+        {
+            "team_name": "Cape Verde",
+            "players": [
+                {
+                    "name": "CJ dos Santos",
+                    "value_eur_million": 1.0
+                },
+                {
+                    "name": "Márcio Rosa",
+                    "value_eur_million": 0.35
+                },
+                {
+                    "name": "Vozinha",
+                    "value_eur_million": 0.05
+                },
+                {
+                    "name": "Logan Costa",
+                    "value_eur_million": 15.0
+                },
+                {
+                    "name": "Diney Borges",
+                    "value_eur_million": 0.9
+                },
+                {
+                    "name": "Kelvin Pires",
+                    "value_eur_million": 0.4
+                },
+                {
+                    "name": "Roberto Lopes",
+                    "value_eur_million": 0.25
+                },
+                {
+                    "name": "Stopira",
+                    "value_eur_million": 0.05
+                },
+                {
+                    "name": "Sidny Lopes Cabral",
+                    "value_eur_million": 4.0
+                },
+                {
+                    "name": "Wagner Pina",
+                    "value_eur_million": 11.0
+                },
+                {
+                    "name": "Steven Moreira",
+                    "value_eur_million": 1.5
+                },
+                {
+                    "name": "Kevin Lenini",
+                    "value_eur_million": 5.0
+                },
+                {
+                    "name": "Laros Duarte",
+                    "value_eur_million": 1.0
+                },
+                {
+                    "name": "João Paulo",
+                    "value_eur_million": 0.9
+                },
+                {
+                    "name": "Deroy Duarte",
+                    "value_eur_million": 1.8
+                },
+                {
+                    "name": "Jamiro Monteiro",
+                    "value_eur_million": 0.65
+                },
+                {
+                    "name": "Yannick Semedo",
+                    "value_eur_million": 0.25
+                },
+                {
+                    "name": "Hélio Varela",
+                    "value_eur_million": 2.5
+                },
+                {
+                    "name": "Jovane Cabral",
+                    "value_eur_million": 1.0
+                },
+                {
+                    "name": "Willy Semedo",
+                    "value_eur_million": 1.0
+                },
+                {
+                    "name": "Ryan Mendes",
+                    "value_eur_million": 0.2
+                },
+                {
+                    "name": "Telmo Arcanjo",
+                    "value_eur_million": 3.0
+                },
+                {
+                    "name": "Garry Rodrigues",
+                    "value_eur_million": 0.3
+                },
+                {
+                    "name": "Gilson Benchimol",
+                    "value_eur_million": 1.2
+                },
+                {
+                    "name": "Dailon Livramento",
+                    "value_eur_million": 0.8
+                },
+                {
+                    "name": "Nuno Da Costa",
+                    "value_eur_million": 0.4
+                }
+            ]
+        }
+    ]
+}
