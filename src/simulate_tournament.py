@@ -62,7 +62,23 @@ except FileNotFoundError:
     print("Warning: squad_features.csv not found. All MVIs will default to 1.0")
     mvi_data = {}
 
+# --- Tournament State Management (Match Overrides) ---
+historical_matches = {}
+# Filter for matches that happen on or after the start of the 2026 World Cup
+df_2026 = df[df['date'] >= pd.Timestamp('2026-06-11')]
+for row in df_2026.itertuples():
+    if pd.notna(row.home_score) and pd.notna(row.away_score):
+        # Store both orientations so we don't worry about home/away order
+        historical_matches[(row.home_team, row.away_team)] = (row.home_score, row.away_score)
+        historical_matches[(row.away_team, row.home_team)] = (row.away_score, row.home_score)
+# -----------------------------------------------------
+
 def simulate_match(team1, team2, is_knockout=False):
+    # Tournament State Lock: If the match has already happened in real life, return the real score!
+    if (team1, team2) in historical_matches:
+        score1, score2 = historical_matches[(team1, team2)]
+        return int(score1), int(score2)
+        
     swapped = False
     if team2 in HOSTS and team1 not in HOSTS:
         team1, team2 = team2, team1
