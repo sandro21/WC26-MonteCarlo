@@ -127,7 +127,7 @@ with tab1:
     # Render interactive DataFrame
     st.dataframe(
         df_display,
-        use_container_width=True,
+        width='stretch',
         column_config={
             "Elo Rating": st.column_config.NumberColumn(format="%.1f"),
             "Win Probability (%)": st.column_config.NumberColumn(format="%.2f%%")
@@ -232,7 +232,7 @@ with tab2:
             'Outcome': [f'{team1} Win', 'Draw', f'{team2} Win'],
             'Probability (%)': [win_prob, draw_prob, loss_prob]
         })
-        st.bar_chart(outcome_data, x='Outcome', y='Probability (%)', use_container_width=True)
+        st.bar_chart(outcome_data, x='Outcome', y='Probability (%)', width='stretch')
 
 # --- Tab 3: Bracket Explorer ---
 with tab3:
