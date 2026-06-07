@@ -1,0 +1,43 @@
+{
+    "Round of 32": [
+        "Brazil 2 - 1 Ecuador",
+        "Bosnia and Herzegovina 0 - 3 Canada",
+        "Uruguay 3 - 1 Netherlands",
+        "Argentina 7 - 1 Algeria",
+        "Austria 3 - 0 Czechia",
+        "Iran 3 - 1 New Zealand",
+        "Belgium 4 - 2 Australia",
+        "Morocco 2 - 1 Cape Verde",
+        "Portugal 1 - 0 Switzerland",
+        "Japan 1 - 4 France",
+        "Sweden 2 - 3 Paraguay",
+        "Iraq 3 - 0 Colombia",
+        "South Africa 2 - 4 Norway",
+        "Spain 0 - 1 United States",
+        "Croatia 0 - 1 Germany",
+        "England 4 - 1 South Korea"
+    ],
+    "Round of 16": [
+        "Brazil 2 - 1 Canada",
+        "Uruguay 1 - 2 Argentina",
+        "Austria 1 - 0 Iran",
+        "Belgium 1 - 0 Morocco",
+        "Portugal 2 - 4 France",
+        "Paraguay 0 - 3 Iraq",
+        "Norway 1 - 0 United States",
+        "Germany 2 - 3 England"
+    ],
+    "Quarterfinals": [
+        "Brazil 0 - 1 Argentina",
+        "Austria 1 - 2 Belgium",
+        "France 6 - 0 Iraq",
+        "Norway 2 - 1 England"
+    ],
+    "Semifinals": [
+        "Argentina 3 - 0 Belgium",
+        "France 3 - 0 Norway"
+    ],
+    "Final": [
+        "Argentina 3 - 0 France"
+    ]
+}

@@ -106,7 +106,7 @@ col_m3.metric(label="Total Matches Processed", value="49,287")
 st.markdown("---")
 
 # --- Tabs Layout ---
-tab1, tab2 = st.tabs(["🏆 Tournament Forecast", "⚔️ Match Predictor"])
+tab1, tab2, tab3 = st.tabs(["🏆 Tournament Forecast", "⚔️ Match Predictor", "ブラケット | Bracket Explorer"])
 
 # --- Tab 1: Tournament Forecast (Lead Table) ---
 with tab1:
@@ -233,3 +233,33 @@ with tab2:
             'Probability (%)': [win_prob, draw_prob, loss_prob]
         })
         st.bar_chart(outcome_data, x='Outcome', y='Probability (%)', use_container_width=True)
+
+# --- Tab 3: Bracket Explorer ---
+with tab3:
+    st.markdown("##### 🏆 Sample Tournament Bracket")
+    st.markdown("A match-by-match log of a complete simulation run from the Round of 32 to the Final.")
+    
+    bracket_path = DATA_DIR / 'sample_bracket.json'
+    if os.path.exists(bracket_path):
+        import json
+        with open(bracket_path, 'r', encoding='utf-8') as f:
+            bracket_data = json.load(f)
+            
+        rounds_order = ["Round of 32", "Round of 16", "Quarterfinals", "Semifinals", "Final"]
+        
+        for round_name in rounds_order:
+            if round_name in bracket_data:
+                # Keep Semis and Final open by default for visual impact
+                is_expanded = True if round_name in ["Semifinals", "Final"] else False
+                
+                with st.expander(round_name, expanded=is_expanded):
+                    matches = bracket_data[round_name]
+                    # Display matches split across 2 columns for a cleaner look
+                    col1, col2 = st.columns(2)
+                    for idx, match in enumerate(matches):
+                        if idx % 2 == 0:
+                            col1.markdown(f"⚽ {match}")
+                        else:
+                            col2.markdown(f"⚽ {match}")
+    else:
+        st.info("No sample bracket found. Please run the simulation engine first.")
