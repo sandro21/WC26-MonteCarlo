@@ -1,3 +1,440 @@
-[
-  
-]
+{
+    "teams": [
+        {
+            "team_name": "Portugal",
+            "players": [
+                {
+                    "name": "Diogo Costa",
+                    "value_eur_million": 40.0
+                },
+                {
+                    "name": "Rui Silva",
+                    "value_eur_million": 7.0
+                },
+                {
+                    "name": "José Sá",
+                    "value_eur_million": 3.5
+                },
+                {
+                    "name": "Rúben Dias",
+                    "value_eur_million": 55.0
+                },
+                {
+                    "name": "Gonçalo Inácio",
+                    "value_eur_million": 40.0
+                },
+                {
+                    "name": "Tomás Araújo",
+                    "value_eur_million": 30.0
+                },
+                {
+                    "name": "Renato Veiga",
+                    "value_eur_million": 25.0
+                },
+                {
+                    "name": "Nuno Mendes",
+                    "value_eur_million": 80.0
+                },
+                {
+                    "name": "Matheus Nunes",
+                    "value_eur_million": 50.0
+                },
+                {
+                    "name": "Diogo Dalot",
+                    "value_eur_million": 30.0
+                },
+                {
+                    "name": "João Cancelo",
+                    "value_eur_million": 8.0
+                },
+                {
+                    "name": "Nélson Semedo",
+                    "value_eur_million": 6.0
+                },
+                {
+                    "name": "Vitinha",
+                    "value_eur_million": 140.0
+                },
+                {
+                    "name": "Rúben Neves",
+                    "value_eur_million": 25.0
+                },
+                {
+                    "name": "Samú Costa",
+                    "value_eur_million": 15.0
+                },
+                {
+                    "name": "João Neves",
+                    "value_eur_million": 140.0
+                },
+                {
+                    "name": "Francisco Trincão",
+                    "value_eur_million": 40.0
+                },
+                {
+                    "name": "Bruno Fernandes",
+                    "value_eur_million": 35.0
+                },
+                {
+                    "name": "Bernardo Silva",
+                    "value_eur_million": 22.0
+                },
+                {
+                    "name": "Rafael Leão",
+                    "value_eur_million": 50.0
+                },
+                {
+                    "name": "Gonçalo Guedes",
+                    "value_eur_million": 6.0
+                },
+                {
+                    "name": "Pedro Neto",
+                    "value_eur_million": 60.0
+                },
+                {
+                    "name": "Francisco Conceição",
+                    "value_eur_million": 30.0
+                },
+                {
+                    "name": "João Félix",
+                    "value_eur_million": 28.0
+                },
+                {
+                    "name": "Gonçalo Ramos",
+                    "value_eur_million": 30.0
+                },
+                {
+                    "name": "Cristiano Ronaldo",
+                    "value_eur_million": 10.0
+                }
+            ]
+        },
+        {
+            "team_name": "Colombia",
+            "players": [
+                {
+                    "name": "Álvaro Montero",
+                    "value_eur_million": 2.5
+                },
+                {
+                    "name": "Camilo Vargas",
+                    "value_eur_million": 0.45
+                },
+                {
+                    "name": "David Ospina",
+                    "value_eur_million": 0.2
+                },
+                {
+                    "name": "Jhon Lucumí",
+                    "value_eur_million": 22.0
+                },
+                {
+                    "name": "Davinson Sánchez",
+                    "value_eur_million": 16.0
+                },
+                {
+                    "name": "Willer Ditta",
+                    "value_eur_million": 5.5
+                },
+                {
+                    "name": "Yerry Mina",
+                    "value_eur_million": 2.5
+                },
+                {
+                    "name": "Johan Mojica",
+                    "value_eur_million": 1.8
+                },
+                {
+                    "name": "Deiver Machado",
+                    "value_eur_million": 1.8
+                },
+                {
+                    "name": "Daniel Muñoz",
+                    "value_eur_million": 27.0
+                },
+                {
+                    "name": "Santiago Arias",
+                    "value_eur_million": 1.2
+                },
+                {
+                    "name": "Richard Ríos",
+                    "value_eur_million": 25.0
+                },
+                {
+                    "name": "Jefferson Lerma",
+                    "value_eur_million": 8.0
+                },
+                {
+                    "name": "Kevin Castaño",
+                    "value_eur_million": 5.0
+                },
+                {
+                    "name": "Gustavo Puerta",
+                    "value_eur_million": 5.0
+                },
+                {
+                    "name": "Juan Portilla",
+                    "value_eur_million": 5.0
+                },
+                {
+                    "name": "Jorge Carrascal",
+                    "value_eur_million": 13.0
+                },
+                {
+                    "name": "Juan Fernando Quintero",
+                    "value_eur_million": 1.8
+                },
+                {
+                    "name": "James Rodríguez",
+                    "value_eur_million": 1.5
+                },
+                {
+                    "name": "Luis Díaz",
+                    "value_eur_million": 70.0
+                },
+                {
+                    "name": "Andrés Gómez",
+                    "value_eur_million": 11.0
+                },
+                {
+                    "name": "Jáminton Campaz",
+                    "value_eur_million": 5.5
+                },
+                {
+                    "name": "Jhon Arias",
+                    "value_eur_million": 15.0
+                },
+                {
+                    "name": "Luis Suárez",
+                    "value_eur_million": 30.0
+                },
+                {
+                    "name": "Cucho Hernández",
+                    "value_eur_million": 18.0
+                },
+                {
+                    "name": "Jhon Córdoba",
+                    "value_eur_million": 10.0
+                }
+            ]
+        },
+        {
+            "team_name": "DR Congo",
+            "players": [
+                {
+                    "name": "Matthieu Epolo",
+                    "value_eur_million": 8.0
+                },
+                {
+                    "name": "Timothy Fayulu",
+                    "value_eur_million": 0.8
+                },
+                {
+                    "name": "Lionel Mpasi-Nzau",
+                    "value_eur_million": 0.4
+                },
+                {
+                    "name": "Axel Tuanzebe",
+                    "value_eur_million": 5.0
+                },
+                {
+                    "name": "Steve Kapuadi",
+                    "value_eur_million": 2.5
+                },
+                {
+                    "name": "Chancel Mbemba",
+                    "value_eur_million": 2.0
+                },
+                {
+                    "name": "Dylan Batubinsika",
+                    "value_eur_million": 0.6
+                },
+                {
+                    "name": "Joris Kayembe",
+                    "value_eur_million": 2.0
+                },
+                {
+                    "name": "Arthur Masuaku",
+                    "value_eur_million": 2.0
+                },
+                {
+                    "name": "Aaron Wan-Bissaka",
+                    "value_eur_million": 15.0
+                },
+                {
+                    "name": "Gédéon Kalulu",
+                    "value_eur_million": 1.0
+                },
+                {
+                    "name": "Ngal'ayel Mukau",
+                    "value_eur_million": 15.0
+                },
+                {
+                    "name": "Charles Pickel",
+                    "value_eur_million": 2.5
+                },
+                {
+                    "name": "Noah Sadiki",
+                    "value_eur_million": 35.0
+                },
+                {
+                    "name": "Edo Kayembe",
+                    "value_eur_million": 4.0
+                },
+                {
+                    "name": "Samuel Moutoussamy",
+                    "value_eur_million": 1.2
+                },
+                {
+                    "name": "Aaron Tshibola",
+                    "value_eur_million": 0.15
+                },
+                {
+                    "name": "Meschack Elia",
+                    "value_eur_million": 1.5
+                },
+                {
+                    "name": "Gaël Kakuta",
+                    "value_eur_million": 0.25
+                },
+                {
+                    "name": "Nathanaël Mbuku",
+                    "value_eur_million": 2.0
+                },
+                {
+                    "name": "Brian Cipenga",
+                    "value_eur_million": 2.0
+                },
+                {
+                    "name": "Théo Bongonda",
+                    "value_eur_million": 3.0
+                },
+                {
+                    "name": "Yoane Wissa",
+                    "value_eur_million": 25.0
+                },
+                {
+                    "name": "Simon Banza",
+                    "value_eur_million": 10.0
+                },
+                {
+                    "name": "Fiston Mayele",
+                    "value_eur_million": 1.8
+                },
+                {
+                    "name": "Cédric Bakambu",
+                    "value_eur_million": 1.2
+                }
+            ]
+        },
+        {
+            "team_name": "Uzbekistan",
+            "players": [
+                {
+                    "name": "Abduvokhid Nematov",
+                    "value_eur_million": 1.5
+                },
+                {
+                    "name": "Utkir Yusupov",
+                    "value_eur_million": 0.5
+                },
+                {
+                    "name": "Botirali Ergashev",
+                    "value_eur_million": 0.5
+                },
+                {
+                    "name": "Abdukodir Khusanov",
+                    "value_eur_million": 50.0
+                },
+                {
+                    "name": "Rustam Ashurmatov",
+                    "value_eur_million": 0.75
+                },
+                {
+                    "name": "Jakhongir Urozov",
+                    "value_eur_million": 0.6
+                },
+                {
+                    "name": "Avazbek Ulmasaliev",
+                    "value_eur_million": 0.5
+                },
+                {
+                    "name": "Umar Eshmurodov",
+                    "value_eur_million": 0.45
+                },
+                {
+                    "name": "Sherzod Nasrullaev",
+                    "value_eur_million": 1.2
+                },
+                {
+                    "name": "Farrukh Sayfiev",
+                    "value_eur_million": 0.225
+                },
+                {
+                    "name": "Khozhiakbar Alizhonov",
+                    "value_eur_million": 1.3
+                },
+                {
+                    "name": "Bekhruz Karimov",
+                    "value_eur_million": 0.35
+                },
+                {
+                    "name": "Odildzhon Khamrobekov",
+                    "value_eur_million": 1.0
+                },
+                {
+                    "name": "Abdulla Abdullaev",
+                    "value_eur_million": 0.5
+                },
+                {
+                    "name": "Aziz Ganiev",
+                    "value_eur_million": 2.0
+                },
+                {
+                    "name": "Otabek Shukurov",
+                    "value_eur_million": 1.5
+                },
+                {
+                    "name": "Akmal Mozgovoy",
+                    "value_eur_million": 1.4
+                },
+                {
+                    "name": "Sherzod Esanov",
+                    "value_eur_million": 0.45
+                },
+                {
+                    "name": "Jamshid Iskanderov",
+                    "value_eur_million": 1.0
+                },
+                {
+                    "name": "Oston Urunov",
+                    "value_eur_million": 2.0
+                },
+                {
+                    "name": "Jaloliddin Masharipov",
+                    "value_eur_million": 1.0
+                },
+                {
+                    "name": "Abbosbek Fayzullaev",
+                    "value_eur_million": 7.0
+                },
+                {
+                    "name": "Dostonbek Khamdamov",
+                    "value_eur_million": 0.9
+                },
+                {
+                    "name": "Eldor Shomurodov",
+                    "value_eur_million": 7.0
+                },
+                {
+                    "name": "Igor Sergeev",
+                    "value_eur_million": 1.2
+                },
+                {
+                    "name": "Azizbek Amanov",
+                    "value_eur_million": 0.5
+                }
+            ]
+        }
+    ]
+}

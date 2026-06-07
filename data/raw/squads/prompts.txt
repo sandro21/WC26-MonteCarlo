@@ -1,0 +1,19 @@
+Act as a data extraction pipeline. Generate a valid JSON file containing the full 26-man rosters and current Transfermarkt market values (in millions of Euros) for all teams in Group H for the 2026 World Cup. 
+
+Use this exact JSON schema structure. Output ONLY the raw JSON block, no markdown prose:
+
+{
+  "teams": [
+    {
+      "team_name": "Exact Country Name",
+      "players": [
+        {"name": "Player Name", "value_eur_million": 45.0},
+        {"name": "Player Name", "value_eur_million": 12.5}
+      ]
+    }
+  ]
+}
+
+Double-check that the team_name values match standard international naming conventions (e.g., "United States", "Korea Republic"). If a player's value is unknown, impute a realistic value based on their club tier rather than leaving it blank or null.
+
+You Must USE BROWSER AGENT for ultimate accuracy and live data. and output in code block for easy copy

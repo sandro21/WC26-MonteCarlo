@@ -1,3 +1,440 @@
-[
-  
-]
+{
+    "teams": [
+        {
+            "team_name": "England",
+            "players": [
+                {
+                    "name": "Jude Bellingham",
+                    "value_eur_million": 130.0
+                },
+                {
+                    "name": "Declan Rice",
+                    "value_eur_million": 120.0
+                },
+                {
+                    "name": "Bukayo Saka",
+                    "value_eur_million": 110.0
+                },
+                {
+                    "name": "Morgan Rogers",
+                    "value_eur_million": 90.0
+                },
+                {
+                    "name": "Elliot Anderson",
+                    "value_eur_million": 75.0
+                },
+                {
+                    "name": "Marc Guéhi",
+                    "value_eur_million": 70.0
+                },
+                {
+                    "name": "Nico O'Reilly",
+                    "value_eur_million": 70.0
+                },
+                {
+                    "name": "Kobbie Mainoo",
+                    "value_eur_million": 70.0
+                },
+                {
+                    "name": "Eberechi Eze",
+                    "value_eur_million": 65.0
+                },
+                {
+                    "name": "Anthony Gordon",
+                    "value_eur_million": 65.0
+                },
+                {
+                    "name": "Reece James",
+                    "value_eur_million": 60.0
+                },
+                {
+                    "name": "Harry Kane",
+                    "value_eur_million": 60.0
+                },
+                {
+                    "name": "Noni Madueke",
+                    "value_eur_million": 50.0
+                },
+                {
+                    "name": "Jarell Quansah",
+                    "value_eur_million": 45.0
+                },
+                {
+                    "name": "Tino Livramento",
+                    "value_eur_million": 45.0
+                },
+                {
+                    "name": "Ezri Konsa",
+                    "value_eur_million": 40.0
+                },
+                {
+                    "name": "Marcus Rashford",
+                    "value_eur_million": 40.0
+                },
+                {
+                    "name": "Djed Spence",
+                    "value_eur_million": 30.0
+                },
+                {
+                    "name": "Dean Henderson",
+                    "value_eur_million": 28.0
+                },
+                {
+                    "name": "James Trafford",
+                    "value_eur_million": 25.0
+                },
+                {
+                    "name": "Ollie Watkins",
+                    "value_eur_million": 25.0
+                },
+                {
+                    "name": "Ivan Toney",
+                    "value_eur_million": 20.0
+                },
+                {
+                    "name": "Jordan Pickford",
+                    "value_eur_million": 13.0
+                },
+                {
+                    "name": "John Stones",
+                    "value_eur_million": 12.0
+                },
+                {
+                    "name": "Dan Burn",
+                    "value_eur_million": 4.0
+                },
+                {
+                    "name": "Jordan Henderson",
+                    "value_eur_million": 1.2
+                }
+            ]
+        },
+        {
+            "team_name": "Croatia",
+            "players": [
+                {
+                    "name": "Josko Gvardiol",
+                    "value_eur_million": 70.0
+                },
+                {
+                    "name": "Luka Vuskovic",
+                    "value_eur_million": 60.0
+                },
+                {
+                    "name": "Josip Stanisic",
+                    "value_eur_million": 40.0
+                },
+                {
+                    "name": "Petar Sucic",
+                    "value_eur_million": 40.0
+                },
+                {
+                    "name": "Martin Baturina",
+                    "value_eur_million": 30.0
+                },
+                {
+                    "name": "Igor Matanovic",
+                    "value_eur_million": 22.0
+                },
+                {
+                    "name": "Josip Sutalo",
+                    "value_eur_million": 12.0
+                },
+                {
+                    "name": "Petar Musa",
+                    "value_eur_million": 12.0
+                },
+                {
+                    "name": "Mateo Kovacic",
+                    "value_eur_million": 10.0
+                },
+                {
+                    "name": "Luka Sucic",
+                    "value_eur_million": 10.0
+                },
+                {
+                    "name": "Nikola Vlasic",
+                    "value_eur_million": 10.0
+                },
+                {
+                    "name": "Toni Fruk",
+                    "value_eur_million": 9.0
+                },
+                {
+                    "name": "Nikola Moro",
+                    "value_eur_million": 7.0
+                },
+                {
+                    "name": "Marin Pongracic",
+                    "value_eur_million": 6.5
+                },
+                {
+                    "name": "Marco Pasalic",
+                    "value_eur_million": 6.5
+                },
+                {
+                    "name": "Kristijan Jakic",
+                    "value_eur_million": 6.0
+                },
+                {
+                    "name": "Mario Pasalic",
+                    "value_eur_million": 6.0
+                },
+                {
+                    "name": "Dominik Kotarski",
+                    "value_eur_million": 5.0
+                },
+                {
+                    "name": "Dominik Livakovic",
+                    "value_eur_million": 4.0
+                },
+                {
+                    "name": "Martin Erlic",
+                    "value_eur_million": 4.0
+                },
+                {
+                    "name": "Luka Modric",
+                    "value_eur_million": 3.5
+                },
+                {
+                    "name": "Duje Caleta-Car",
+                    "value_eur_million": 2.8
+                },
+                {
+                    "name": "Ante Budimir",
+                    "value_eur_million": 2.8
+                },
+                {
+                    "name": "Andrej Kramaric",
+                    "value_eur_million": 2.5
+                },
+                {
+                    "name": "Ivan Perisic",
+                    "value_eur_million": 1.2
+                },
+                {
+                    "name": "Ivor Pandur",
+                    "value_eur_million": 1.5
+                }
+            ]
+        },
+        {
+            "team_name": "Ghana",
+            "players": [
+                {
+                    "name": "Antoine Semenyo",
+                    "value_eur_million": 80.0
+                },
+                {
+                    "name": "Abdul Fatawu",
+                    "value_eur_million": 20.0
+                },
+                {
+                    "name": "Kamaldeen Sulemana",
+                    "value_eur_million": 17.0
+                },
+                {
+                    "name": "Brandon Thomas-Asante",
+                    "value_eur_million": 16.0
+                },
+                {
+                    "name": "Christopher Bonus Baah",
+                    "value_eur_million": 14.0
+                },
+                {
+                    "name": "Kojo Peprah Oppong",
+                    "value_eur_million": 10.0
+                },
+                {
+                    "name": "Caleb Yirenkyi",
+                    "value_eur_million": 10.0
+                },
+                {
+                    "name": "Ernest Nuamah",
+                    "value_eur_million": 10.0
+                },
+                {
+                    "name": "Iñaki Williams",
+                    "value_eur_million": 8.0
+                },
+                {
+                    "name": "Alidu Seidu",
+                    "value_eur_million": 6.0
+                },
+                {
+                    "name": "Jonas Adjetey",
+                    "value_eur_million": 6.0
+                },
+                {
+                    "name": "Augustine Boakye",
+                    "value_eur_million": 6.0
+                },
+                {
+                    "name": "Jerome Opoku",
+                    "value_eur_million": 5.0
+                },
+                {
+                    "name": "Gideon Mensah",
+                    "value_eur_million": 4.0
+                },
+                {
+                    "name": "Elisha Owusu",
+                    "value_eur_million": 4.0
+                },
+                {
+                    "name": "Abdul Mumin",
+                    "value_eur_million": 3.0
+                },
+                {
+                    "name": "Marvin Senaya",
+                    "value_eur_million": 3.0
+                },
+                {
+                    "name": "Prince Adu",
+                    "value_eur_million": 3.0
+                },
+                {
+                    "name": "Abdul Rahman Baba",
+                    "value_eur_million": 2.0
+                },
+                {
+                    "name": "Thomas Partey",
+                    "value_eur_million": 2.0
+                },
+                {
+                    "name": "Lawrence Ati Zigi",
+                    "value_eur_million": 1.5
+                },
+                {
+                    "name": "Kwasi Sibo",
+                    "value_eur_million": 1.4
+                },
+                {
+                    "name": "Derrick Luckassen",
+                    "value_eur_million": 1.0
+                },
+                {
+                    "name": "Jordan Ayew",
+                    "value_eur_million": 1.0
+                },
+                {
+                    "name": "Joseph Anang",
+                    "value_eur_million": 0.35
+                },
+                {
+                    "name": "Emmanuel Agyei",
+                    "value_eur_million": 0.25
+                }
+            ]
+        },
+        {
+            "team_name": "Panama",
+            "players": [
+                {
+                    "name": "Amir Murillo",
+                    "value_eur_million": 7.0
+                },
+                {
+                    "name": "José Córdoba",
+                    "value_eur_million": 5.0
+                },
+                {
+                    "name": "Adalberto Carrasquilla",
+                    "value_eur_million": 4.0
+                },
+                {
+                    "name": "Andrés Andrade",
+                    "value_eur_million": 2.5
+                },
+                {
+                    "name": "César Blackman",
+                    "value_eur_million": 2.5
+                },
+                {
+                    "name": "José Luis Rodríguez",
+                    "value_eur_million": 2.5
+                },
+                {
+                    "name": "Ismael Díaz",
+                    "value_eur_million": 1.8
+                },
+                {
+                    "name": "Tomás Rodríguez",
+                    "value_eur_million": 1.0
+                },
+                {
+                    "name": "Azarias Londoño",
+                    "value_eur_million": 1.0
+                },
+                {
+                    "name": "Edgardo Fariña",
+                    "value_eur_million": 0.9
+                },
+                {
+                    "name": "Jorge Gutiérrez",
+                    "value_eur_million": 0.8
+                },
+                {
+                    "name": "Cristian Martínez",
+                    "value_eur_million": 0.8
+                },
+                {
+                    "name": "Orlando Mosquera",
+                    "value_eur_million": 0.7
+                },
+                {
+                    "name": "Yoel Bárcenas",
+                    "value_eur_million": 0.65
+                },
+                {
+                    "name": "Carlos Harvey",
+                    "value_eur_million": 0.6
+                },
+                {
+                    "name": "José Fajardo",
+                    "value_eur_million": 0.55
+                },
+                {
+                    "name": "Jiovany Ramos",
+                    "value_eur_million": 0.45
+                },
+                {
+                    "name": "César Yanis",
+                    "value_eur_million": 0.4
+                },
+                {
+                    "name": "Fidel Escobar",
+                    "value_eur_million": 0.35
+                },
+                {
+                    "name": "Cecilio Waterman",
+                    "value_eur_million": 0.25
+                },
+                {
+                    "name": "Roderick Miller",
+                    "value_eur_million": 0.175
+                },
+                {
+                    "name": "Luis Mejía",
+                    "value_eur_million": 0.15
+                },
+                {
+                    "name": "Aníbal Godoy",
+                    "value_eur_million": 0.1
+                },
+                {
+                    "name": "Alberto Quintero",
+                    "value_eur_million": 0.075
+                },
+                {
+                    "name": "Eric Davis",
+                    "value_eur_million": 0.05
+                },
+                {
+                    "name": "César Samudio",
+                    "value_eur_million": 0.4
+                }
+            ]
+        }
+    ]
+}

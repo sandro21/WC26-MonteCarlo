@@ -1,3 +1,440 @@
-[
-  
-]
+{
+    "teams": [
+        {
+            "team_name": "Argentina",
+            "players": [
+                {
+                    "name": "Emiliano Martinez",
+                    "value_eur_million": 28.0
+                },
+                {
+                    "name": "Geronimo Rulli",
+                    "value_eur_million": 8.0
+                },
+                {
+                    "name": "Juan Musso",
+                    "value_eur_million": 8.0
+                },
+                {
+                    "name": "Nahuel Molina",
+                    "value_eur_million": 35.0
+                },
+                {
+                    "name": "Gonzalo Montiel",
+                    "value_eur_million": 10.0
+                },
+                {
+                    "name": "Cristian Romero",
+                    "value_eur_million": 65.0
+                },
+                {
+                    "name": "Nicolas Otamendi",
+                    "value_eur_million": 1.5
+                },
+                {
+                    "name": "Lisandro Martinez",
+                    "value_eur_million": 50.0
+                },
+                {
+                    "name": "Leonardo Balerdi",
+                    "value_eur_million": 20.0
+                },
+                {
+                    "name": "Facundo Medina",
+                    "value_eur_million": 25.0
+                },
+                {
+                    "name": "Nicolas Tagliafico",
+                    "value_eur_million": 8.0
+                },
+                {
+                    "name": "Marcos Acuna",
+                    "value_eur_million": 4.0
+                },
+                {
+                    "name": "Rodrigo De Paul",
+                    "value_eur_million": 30.0
+                },
+                {
+                    "name": "Enzo Fernandez",
+                    "value_eur_million": 80.0
+                },
+                {
+                    "name": "Alexis Mac Allister",
+                    "value_eur_million": 70.0
+                },
+                {
+                    "name": "Giovani Lo Celso",
+                    "value_eur_million": 16.0
+                },
+                {
+                    "name": "Leandro Paredes",
+                    "value_eur_million": 8.0
+                },
+                {
+                    "name": "Exequiel Palacios",
+                    "value_eur_million": 40.0
+                },
+                {
+                    "name": "Guido Rodriguez",
+                    "value_eur_million": 20.0
+                },
+                {
+                    "name": "Valentin Carboni",
+                    "value_eur_million": 15.0
+                },
+                {
+                    "name": "Lionel Messi",
+                    "value_eur_million": 30.0
+                },
+                {
+                    "name": "Alejandro Garnacho",
+                    "value_eur_million": 40.0
+                },
+                {
+                    "name": "Julian Alvarez",
+                    "value_eur_million": 90.0
+                },
+                {
+                    "name": "Lautaro Martinez",
+                    "value_eur_million": 110.0
+                },
+                {
+                    "name": "Nicolas Gonzalez",
+                    "value_eur_million": 35.0
+                },
+                {
+                    "name": "Paulo Dybala",
+                    "value_eur_million": 25.0
+                }
+            ]
+        },
+        {
+            "team_name": "Algeria",
+            "players": [
+                {
+                    "name": "Anthony Mandrea",
+                    "value_eur_million": 3.0
+                },
+                {
+                    "name": "Moustapha Zeghba",
+                    "value_eur_million": 0.5
+                },
+                {
+                    "name": "Oussama Benbot",
+                    "value_eur_million": 0.5
+                },
+                {
+                    "name": "Youcef Atal",
+                    "value_eur_million": 6.0
+                },
+                {
+                    "name": "Kevin Guitoun",
+                    "value_eur_million": 2.0
+                },
+                {
+                    "name": "Aissa Mandi",
+                    "value_eur_million": 2.0
+                },
+                {
+                    "name": "Ahmed Touba",
+                    "value_eur_million": 2.0
+                },
+                {
+                    "name": "Zinedine Belaid",
+                    "value_eur_million": 1.5
+                },
+                {
+                    "name": "Ramy Bensebaini",
+                    "value_eur_million": 15.0
+                },
+                {
+                    "name": "Rayan Ait-Nouri",
+                    "value_eur_million": 35.0
+                },
+                {
+                    "name": "Yasser Larouci",
+                    "value_eur_million": 3.0
+                },
+                {
+                    "name": "Ismael Bennacer",
+                    "value_eur_million": 35.0
+                },
+                {
+                    "name": "Nabil Bentaleb",
+                    "value_eur_million": 10.0
+                },
+                {
+                    "name": "Adem Zorgane",
+                    "value_eur_million": 6.0
+                },
+                {
+                    "name": "Ramiz Zerrouki",
+                    "value_eur_million": 8.0
+                },
+                {
+                    "name": "Hicham Boudaoui",
+                    "value_eur_million": 9.0
+                },
+                {
+                    "name": "Houssem Aouar",
+                    "value_eur_million": 13.0
+                },
+                {
+                    "name": "Riyad Mahrez",
+                    "value_eur_million": 16.0
+                },
+                {
+                    "name": "Adam Ounas",
+                    "value_eur_million": 7.0
+                },
+                {
+                    "name": "Fares Chaibi",
+                    "value_eur_million": 15.0
+                },
+                {
+                    "name": "Said Benrahma",
+                    "value_eur_million": 15.0
+                },
+                {
+                    "name": "Amine Gouiri",
+                    "value_eur_million": 28.0
+                },
+                {
+                    "name": "Mohamed Amoura",
+                    "value_eur_million": 16.0
+                },
+                {
+                    "name": "Baghdad Bounedjah",
+                    "value_eur_million": 3.0
+                },
+                {
+                    "name": "Youcef Belaili",
+                    "value_eur_million": 1.5
+                },
+                {
+                    "name": "Islam Slimani",
+                    "value_eur_million": 1.0
+                }
+            ]
+        },
+        {
+            "team_name": "Austria",
+            "players": [
+                {
+                    "name": "Patrick Pentz",
+                    "value_eur_million": 1.5
+                },
+                {
+                    "name": "Heinz Lindner",
+                    "value_eur_million": 0.5
+                },
+                {
+                    "name": "Niklas Hedl",
+                    "value_eur_million": 2.0
+                },
+                {
+                    "name": "Stefan Posch",
+                    "value_eur_million": 14.0
+                },
+                {
+                    "name": "Kevin Danso",
+                    "value_eur_million": 22.0
+                },
+                {
+                    "name": "Philipp Lienhart",
+                    "value_eur_million": 15.0
+                },
+                {
+                    "name": "Maximilian Wober",
+                    "value_eur_million": 14.0
+                },
+                {
+                    "name": "Phillipp Mwene",
+                    "value_eur_million": 3.0
+                },
+                {
+                    "name": "Emanuel Daniliuc",
+                    "value_eur_million": 7.0
+                },
+                {
+                    "name": "Leopold Querfeld",
+                    "value_eur_million": 5.0
+                },
+                {
+                    "name": "Samson Baidoo",
+                    "value_eur_million": 4.0
+                },
+                {
+                    "name": "David Alaba",
+                    "value_eur_million": 25.0
+                },
+                {
+                    "name": "Konrad Laimer",
+                    "value_eur_million": 30.0
+                },
+                {
+                    "name": "Marcel Sabitzer",
+                    "value_eur_million": 20.0
+                },
+                {
+                    "name": "Xaver Schlager",
+                    "value_eur_million": 28.0
+                },
+                {
+                    "name": "Christoph Baumgartner",
+                    "value_eur_million": 24.0
+                },
+                {
+                    "name": "Nicolas Seiwald",
+                    "value_eur_million": 16.0
+                },
+                {
+                    "name": "Florian Grillitsch",
+                    "value_eur_million": 6.5
+                },
+                {
+                    "name": "Romano Schmid",
+                    "value_eur_million": 4.5
+                },
+                {
+                    "name": "Matthias Seidl",
+                    "value_eur_million": 3.0
+                },
+                {
+                    "name": "Patrick Wimmer",
+                    "value_eur_million": 15.0
+                },
+                {
+                    "name": "Michael Gregoritsch",
+                    "value_eur_million": 6.0
+                },
+                {
+                    "name": "Marko Arnautovic",
+                    "value_eur_million": 5.0
+                },
+                {
+                    "name": "Maximilian Entrup",
+                    "value_eur_million": 1.5
+                },
+                {
+                    "name": "Andreas Weimann",
+                    "value_eur_million": 0.8
+                },
+                {
+                    "name": "Manprit Sarkaria",
+                    "value_eur_million": 2.0
+                }
+            ]
+        },
+        {
+            "team_name": "Jordan",
+            "players": [
+                {
+                    "name": "Yazeed Abulaila",
+                    "value_eur_million": 0.3
+                },
+                {
+                    "name": "Abdallah Al-Fakhouri",
+                    "value_eur_million": 0.2
+                },
+                {
+                    "name": "Ahmad Al-Juaidi",
+                    "value_eur_million": 0.1
+                },
+                {
+                    "name": "Ehsan Haddad",
+                    "value_eur_million": 0.3
+                },
+                {
+                    "name": "Feras Shelbaieh",
+                    "value_eur_million": 0.2
+                },
+                {
+                    "name": "Yazan Al-Arab",
+                    "value_eur_million": 0.3
+                },
+                {
+                    "name": "Abdallah Nasib",
+                    "value_eur_million": 0.3
+                },
+                {
+                    "name": "Anas Bani Yaseen",
+                    "value_eur_million": 0.1
+                },
+                {
+                    "name": "Bara' Marei",
+                    "value_eur_million": 0.1
+                },
+                {
+                    "name": "Salem Al-Ajalin",
+                    "value_eur_million": 0.2
+                },
+                {
+                    "name": "Saed Al-Rosan",
+                    "value_eur_million": 0.1
+                },
+                {
+                    "name": "Nizar Al-Rashdan",
+                    "value_eur_million": 0.3
+                },
+                {
+                    "name": "Noor Al-Rawabdeh",
+                    "value_eur_million": 0.4
+                },
+                {
+                    "name": "Rajaei Ayed",
+                    "value_eur_million": 0.2
+                },
+                {
+                    "name": "Saleh Ratib",
+                    "value_eur_million": 0.2
+                },
+                {
+                    "name": "Ibrahim Sadeh",
+                    "value_eur_million": 0.3
+                },
+                {
+                    "name": "Mahmoud Shaukat",
+                    "value_eur_million": 0.1
+                },
+                {
+                    "name": "Yousef Abu Jalbosh",
+                    "value_eur_million": 0.2
+                },
+                {
+                    "name": "Mohannad Abu Taha",
+                    "value_eur_million": 0.1
+                },
+                {
+                    "name": "Musa Al-Taamari",
+                    "value_eur_million": 6.0
+                },
+                {
+                    "name": "Yazan Al-Naimat",
+                    "value_eur_million": 1.5
+                },
+                {
+                    "name": "Ali Olwan",
+                    "value_eur_million": 0.6
+                },
+                {
+                    "name": "Mahmoud Mardi",
+                    "value_eur_million": 0.4
+                },
+                {
+                    "name": "Anas Al-Awadat",
+                    "value_eur_million": 0.2
+                },
+                {
+                    "name": "Mohammad Abu Zraiq",
+                    "value_eur_million": 0.2
+                },
+                {
+                    "name": "Mohammad Ali Hasheesh",
+                    "value_eur_million": 0.1
+                }
+            ]
+        }
+    ]
+}
