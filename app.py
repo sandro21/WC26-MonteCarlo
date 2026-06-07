@@ -221,9 +221,9 @@ with tab2:
         # Display outcome probabilities
         st.markdown("###### Match Outcome Probabilities")
         col_w, col_d, col_l = st.columns(3)
-        col_w.metric(label=f"{team1} Win Probability", value=f"{win_prob:.1f}%")
+        col_w.metric(label=f"{team1} Win", value=f"{win_prob:.1f}%")
         col_d.metric(label="Draw Probability", value=f"{draw_prob:.1f}%")
-        col_l.metric(label=f"{team2} Win Probability", value=f"{loss_prob:.1f}%")
+        col_l.metric(label=f"{team2} Win", value=f"{loss_prob:.1f}%")
         
         st.markdown("---")
         
@@ -258,8 +258,8 @@ with tab3:
                     col1, col2 = st.columns(2)
                     for idx, match in enumerate(matches):
                         if idx % 2 == 0:
-                            col1.markdown(f"⚽ {match}")
+                            col1.markdown(f"🏆 {match}" if "Final" in round_name and "Semi" not in round_name else f"⚽ {match}")
                         else:
-                            col2.markdown(f"⚽ {match}")
+                            col2.markdown(f"🏆 {match}" if "Final" in round_name and "Semi" not in round_name else f"⚽ {match}")
     else:
         st.info("No sample bracket found. Please run the simulation engine first.")

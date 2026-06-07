@@ -25,7 +25,10 @@ def fetch_live_matches(target_date):
     headers = {
         "x-apisports-key": API_SPORTS_KEY
     }
-    querystring = {"date": target_date}
+    querystring = {
+        "date": target_date,
+        "timezone": "America/Los_Angeles"
+    }
     
     print(f"Fetching matches for {target_date}...")
     try:
