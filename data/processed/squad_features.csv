@@ -1,45 +1,49 @@
 team_name,total_squad_value,starting_xi_value,market_value_index,top_player_name,top_player_value
-Mexico,191.85,129.5,0.506,Santiago Gimenez,18.0
-South Africa,49.65,32.9,0.129,Lyle Foster,8.0
-Korea Republic,139.4,119.5,0.467,Kang-in Lee,28.0
-Czechia,173.675,130.0,0.508,Ladislav Krejcí,22.0
-Canada,196.65,165.5,0.647,Alphonso Davies,40.0
-Bosnia and Herzegovina,151.6,122.5,0.479,Tarik Muharemović,25.0
-Qatar,19.925,16.175,0.063,Akram Afif,8.0
-Switzerland,332.5,263.0,1.028,Johan Manzambi,50.0
-Brazil,909.2,695.0,2.717,Vinicius Junior,150.0
-Morocco,487.2,373.0,1.458,Achraf Hakimi,80.0
-Haiti,56.075,51.8,0.202,Wilson Isidor,18.0
-Scotland,196.225,168.0,0.657,Scott McTominay,40.0
-United States,385.65,305.0,1.192,Christian Pulisic,40.0
-Paraguay,153.65,124.0,0.485,Diego Gómez,25.0
-Australia,77.45,66.6,0.26,Alessandro Circati,12.0
-Türkiye,473.7,384.0,1.501,Arda Güler,90.0
-Germany,947.0,675.0,2.638,Jamal Musiala,100.0
-Ecuador,367.4,329.0,1.286,Moisés Caicedo,100.0
-Ivory Coast,526.1,400.0,1.564,Yan Diomande,90.0
-Curaçao,25.775,20.6,0.081,Armando Obispo,4.0
-Netherlands,804.2,550.0,2.15,Ryan Gravenberch,80.0
-Japan,270.85,202.0,0.79,Kaishu Sano,40.0
-Sweden,406.075,352.0,1.376,Alexander Isak,85.0
-Tunisia,69.95,55.0,0.215,Hannibal,15.0
-Belgium,560.5,402.0,1.571,Loïs Openda,60.0
-Egypt,143.2,122.5,0.479,Omar Marmoush,60.0
-Iran,34.9,23.1,0.09,Mehdi Ghayedi,4.5
-New Zealand,34.75,28.7,0.112,Chris Wood,6.0
-Spain,1222.8,840.0,3.283,Lamine Yamal,200.0
-Uruguay,359.3,291.0,1.137,Federico Valverde,90.0
-Saudi Arabia,40.675,31.4,0.123,Saud Abdulhamid,9.0
-Cape Verde,54.5,47.0,0.184,Logan Costa,15.0
-Argentina,871.5,645.0,2.521,Lautaro Martinez,110.0
-Algeria,254.0,207.0,0.809,Rayan Ait-Nouri,35.0
-Austria,275.3,223.0,0.872,Konrad Laimer,30.0
-Jordan,13.0,10.7,0.042,Musa Al-Taamari,6.0
-Portugal,1005.5,730.0,2.853,Vitinha,140.0
-Colombia,304.75,257.0,1.005,Luis Díaz,70.0
-DR Congo,143.9,125.0,0.489,Noah Sadiki,35.0
-Uzbekistan,85.325,76.1,0.297,Abdukodir Khusanov,50.0
-England,1363.2,925.0,3.616,Jude Bellingham,130.0
-Croatia,384.3,316.0,1.235,Josko Gvardiol,70.0
-Ghana,234.5,197.0,0.77,Antoine Semenyo,80.0
-Panama,34.7,29.0,0.113,Amir Murillo,7.0
+Mexico,191.85,129.5,0.488,Santiago Gimenez,18.0
+South Africa,49.65,32.9,0.124,Lyle Foster,8.0
+Korea Republic,139.4,119.5,0.45,Kang-in Lee,28.0
+Czechia,173.675,130.0,0.49,Ladislav Krejcí,22.0
+Canada,196.65,165.5,0.623,Alphonso Davies,40.0
+Bosnia and Herzegovina,151.6,122.5,0.461,Tarik Muharemović,25.0
+Qatar,19.925,16.175,0.061,Akram Afif,8.0
+Switzerland,332.5,263.0,0.991,Johan Manzambi,50.0
+Brazil,909.2,695.0,2.618,Vinicius Junior,150.0
+Morocco,487.2,373.0,1.405,Achraf Hakimi,80.0
+Haiti,56.075,51.8,0.195,Wilson Isidor,18.0
+Scotland,196.225,168.0,0.633,Scott McTominay,40.0
+United States,385.65,305.0,1.149,Christian Pulisic,40.0
+Paraguay,153.65,124.0,0.467,Diego Gómez,25.0
+Australia,77.45,66.6,0.251,Alessandro Circati,12.0
+Türkiye,473.7,384.0,1.447,Arda Güler,90.0
+Germany,947.0,675.0,2.543,Jamal Musiala,100.0
+Ecuador,367.4,329.0,1.239,Moisés Caicedo,100.0
+Ivory Coast,526.1,400.0,1.507,Yan Diomande,90.0
+Curaçao,25.775,20.6,0.078,Armando Obispo,4.0
+Netherlands,804.2,550.0,2.072,Ryan Gravenberch,80.0
+Japan,270.85,202.0,0.761,Kaishu Sano,40.0
+Sweden,406.075,352.0,1.326,Alexander Isak,85.0
+Tunisia,69.95,55.0,0.207,Hannibal,15.0
+Belgium,560.5,402.0,1.514,Loïs Openda,60.0
+Egypt,143.2,122.5,0.461,Omar Marmoush,60.0
+Iran,34.9,23.1,0.087,Mehdi Ghayedi,4.5
+New Zealand,34.75,28.7,0.108,Chris Wood,6.0
+Spain,1222.8,840.0,3.164,Lamine Yamal,200.0
+Uruguay,359.3,291.0,1.096,Federico Valverde,90.0
+Saudi Arabia,40.675,31.4,0.118,Saud Abdulhamid,9.0
+Cape Verde,54.5,47.0,0.177,Logan Costa,15.0
+France,1185.0,795.0,2.995,Kylian Mbappe,180.0
+Senegal,304.0,224.0,0.844,Pape Matar Sarr,45.0
+Iraq,19.7,13.4,0.05,Ahmed Qasem,2.5
+Norway,508.8,453.0,1.706,Erling Haaland,180.0
+Argentina,871.5,645.0,2.43,Lautaro Martinez,110.0
+Algeria,254.0,207.0,0.78,Rayan Ait-Nouri,35.0
+Austria,275.3,223.0,0.84,Konrad Laimer,30.0
+Jordan,13.0,10.7,0.04,Musa Al-Taamari,6.0
+Portugal,1005.5,730.0,2.75,Vitinha,140.0
+Colombia,304.75,257.0,0.968,Luis Díaz,70.0
+DR Congo,143.9,125.0,0.471,Noah Sadiki,35.0
+Uzbekistan,85.325,76.1,0.287,Abdukodir Khusanov,50.0
+England,1363.2,925.0,3.485,Jude Bellingham,130.0
+Croatia,384.3,316.0,1.19,Josko Gvardiol,70.0
+Ghana,234.5,197.0,0.742,Antoine Semenyo,80.0
+Panama,34.7,29.0,0.109,Amir Murillo,7.0
