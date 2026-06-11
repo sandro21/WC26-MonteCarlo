@@ -4,51 +4,67 @@
             "team_name": "Brazil",
             "players": [
                 {
-                    "name": "Vinicius Junior",
-                    "value_eur_million": 150.0
+                    "name": "Alisson",
+                    "value_eur_million": 15.0
                 },
                 {
-                    "name": "Raphinha",
-                    "value_eur_million": 80.0
+                    "name": "Ederson",
+                    "value_eur_million": 10.0
+                },
+                {
+                    "name": "Weverton",
+                    "value_eur_million": 0.7
                 },
                 {
                     "name": "Gabriel",
                     "value_eur_million": 75.0
                 },
                 {
-                    "name": "Bruno Guimarães",
-                    "value_eur_million": 75.0
-                },
-                {
-                    "name": "Matheus Cunha",
-                    "value_eur_million": 70.0
-                },
-                {
-                    "name": "Igor Thiago",
-                    "value_eur_million": 50.0
-                },
-                {
-                    "name": "Gabriel Martinelli",
-                    "value_eur_million": 45.0
-                },
-                {
-                    "name": "Wesley",
-                    "value_eur_million": 40.0
-                },
-                {
-                    "name": "Rayan",
-                    "value_eur_million": 40.0
-                },
-                {
                     "name": "Bremer",
                     "value_eur_million": 35.0
                 },
                 {
-                    "name": "Endrick",
-                    "value_eur_million": 35.0
+                    "name": "Marquinhos",
+                    "value_eur_million": 28.0
                 },
                 {
-                    "name": "Danilo (Juventus)",
+                    "name": "Roger Ibañez",
+                    "value_eur_million": 18.0
+                },
+                {
+                    "name": "Léo Pereira",
+                    "value_eur_million": 12.0
+                },
+                {
+                    "name": "Danilo",
+                    "value_eur_million": 2.0
+                },
+                {
+                    "name": "Douglas Santos",
+                    "value_eur_million": 7.5
+                },
+                {
+                    "name": "Alex Sandro",
+                    "value_eur_million": 1.0
+                },
+                {
+                    "name": "Fabinho",
+                    "value_eur_million": 12.0
+                },
+                {
+                    "name": "Casemiro",
+                    "value_eur_million": 6.0
+                },
+                {
+                    "name": "Bruno Guimarães",
+                    "value_eur_million": 70.0
+                },
+                {
+                    "name": "Éderson",
+                    "value_eur_million": 45.0
+                },
+                {
+                    "name": "Danilo",
                     "value_eur_million": 32.0
                 },
                 {
@@ -56,56 +72,40 @@
                     "value_eur_million": 32.0
                 },
                 {
-                    "name": "Marquinhos",
-                    "value_eur_million": 30.0
+                    "name": "Neymar",
+                    "value_eur_million": 8.0
+                },
+                {
+                    "name": "Vinicius Junior",
+                    "value_eur_million": 140.0
+                },
+                {
+                    "name": "Matheus Cunha",
+                    "value_eur_million": 75.0
+                },
+                {
+                    "name": "Raphinha",
+                    "value_eur_million": 70.0
+                },
+                {
+                    "name": "Gabriel Martinelli",
+                    "value_eur_million": 45.0
+                },
+                {
+                    "name": "Rayan",
+                    "value_eur_million": 60.0
                 },
                 {
                     "name": "Luiz Henrique",
                     "value_eur_million": 24.0
                 },
                 {
-                    "name": "Alisson",
-                    "value_eur_million": 17.0
+                    "name": "Igor Thiago",
+                    "value_eur_million": 65.0
                 },
                 {
-                    "name": "Roger Ibañez",
-                    "value_eur_million": 17.0
-                },
-                {
-                    "name": "Fabinho",
-                    "value_eur_million": 13.0
-                },
-                {
-                    "name": "Léo Pereira",
-                    "value_eur_million": 12.0
-                },
-                {
-                    "name": "Ederson",
-                    "value_eur_million": 10.0
-                },
-                {
-                    "name": "Casemiro",
-                    "value_eur_million": 8.0
-                },
-                {
-                    "name": "Neymar",
-                    "value_eur_million": 8.0
-                },
-                {
-                    "name": "Douglas Santos",
-                    "value_eur_million": 7.5
-                },
-                {
-                    "name": "Danilo (Forest)",
-                    "value_eur_million": 2.0
-                },
-                {
-                    "name": "Alex Sandro",
-                    "value_eur_million": 1.0
-                },
-                {
-                    "name": "Weverton",
-                    "value_eur_million": 0.7
+                    "name": "Endrick",
+                    "value_eur_million": 40.0
                 }
             ]
         },
@@ -113,32 +113,60 @@
             "team_name": "Morocco",
             "players": [
                 {
+                    "name": "Yassine Bounou",
+                    "value_eur_million": 3.0
+                },
+                {
+                    "name": "Ahmed Reda Tagnaouti",
+                    "value_eur_million": 1.0
+                },
+                {
+                    "name": "Munir El Kajoui",
+                    "value_eur_million": 0.6
+                },
+                {
+                    "name": "Chadi Riad",
+                    "value_eur_million": 15.0
+                },
+                {
+                    "name": "Issa Diop",
+                    "value_eur_million": 8.0
+                },
+                {
+                    "name": "Redouane Halhal",
+                    "value_eur_million": 5.0
+                },
+                {
+                    "name": "Marwane Saadane",
+                    "value_eur_million": 0.4
+                },
+                {
+                    "name": "Anass Salah-Eddine",
+                    "value_eur_million": 12.0
+                },
+                {
+                    "name": "Youssef Belammari",
+                    "value_eur_million": 1.2
+                },
+                {
                     "name": "Achraf Hakimi",
                     "value_eur_million": 80.0
                 },
                 {
+                    "name": "Noussair Mazraoui",
+                    "value_eur_million": 18.0
+                },
+                {
+                    "name": "Zakaria El Ouahdi",
+                    "value_eur_million": 17.0
+                },
+                {
+                    "name": "Sofyan Amrabat",
+                    "value_eur_million": 10.0
+                },
+                {
                     "name": "Ayyoub Bouaddi",
                     "value_eur_million": 50.0
-                },
-                {
-                    "name": "Ismael Saibari",
-                    "value_eur_million": 40.0
-                },
-                {
-                    "name": "Bilal El Khannouss",
-                    "value_eur_million": 35.0
-                },
-                {
-                    "name": "Brahim Díaz",
-                    "value_eur_million": 35.0
-                },
-                {
-                    "name": "Abde Ezzalzouli",
-                    "value_eur_million": 30.0
-                },
-                {
-                    "name": "Chemsdine Talbi",
-                    "value_eur_million": 25.0
                 },
                 {
                     "name": "Neil El Aynaoui",
@@ -149,72 +177,44 @@
                     "value_eur_million": 22.0
                 },
                 {
-                    "name": "Noussair Mazraoui",
-                    "value_eur_million": 18.0
-                },
-                {
-                    "name": "Nayef Aguerd",
-                    "value_eur_million": 15.0
-                },
-                {
-                    "name": "Chadi Riad",
-                    "value_eur_million": 15.0
-                },
-                {
-                    "name": "Zakaria El Ouahdi",
-                    "value_eur_million": 15.0
-                },
-                {
-                    "name": "Anass Salah-Eddine",
-                    "value_eur_million": 12.0
-                },
-                {
-                    "name": "Sofyan Amrabat",
-                    "value_eur_million": 12.0
-                },
-                {
-                    "name": "Gessime Yassine",
-                    "value_eur_million": 12.0
-                },
-                {
                     "name": "Azzedine Ounahi",
                     "value_eur_million": 10.0
                 },
                 {
-                    "name": "Ayoube Amaimouni",
-                    "value_eur_million": 10.0
+                    "name": "Ismael Saibari",
+                    "value_eur_million": 40.0
                 },
                 {
-                    "name": "Issa Diop",
-                    "value_eur_million": 8.0
+                    "name": "Bilal El Khannouss",
+                    "value_eur_million": 35.0
                 },
                 {
                     "name": "Soufiane Rahimi",
                     "value_eur_million": 6.0
                 },
                 {
+                    "name": "Amine Sbaï",
+                    "value_eur_million": 4.0
+                },
+                {
+                    "name": "Brahim Díaz",
+                    "value_eur_million": 35.0
+                },
+                {
+                    "name": "Chemsdine Talbi",
+                    "value_eur_million": 25.0
+                },
+                {
+                    "name": "Gessime Yassine",
+                    "value_eur_million": 12.0
+                },
+                {
+                    "name": "Ayoube Amaimouni-Echghouyab",
+                    "value_eur_million": 10.0
+                },
+                {
                     "name": "Ayoub El Kaabi",
-                    "value_eur_million": 5.0
-                },
-                {
-                    "name": "Yassine Bounou",
-                    "value_eur_million": 3.5
-                },
-                {
-                    "name": "Redouane Halhal",
-                    "value_eur_million": 3.0
-                },
-                {
-                    "name": "Youssef Belammari",
-                    "value_eur_million": 1.2
-                },
-                {
-                    "name": "Ahmed Reda Tagnaouti",
-                    "value_eur_million": 0.8
-                },
-                {
-                    "name": "Munir El Kajoui",
-                    "value_eur_million": 0.7
+                    "value_eur_million": 4.5
                 }
             ]
         },
@@ -222,20 +222,16 @@
             "team_name": "Haiti",
             "players": [
                 {
-                    "name": "Wilson Isidor",
-                    "value_eur_million": 18.0
+                    "name": "Alexandre Pierre",
+                    "value_eur_million": 0.7
                 },
                 {
-                    "name": "Jean-Ricner Bellegarde",
-                    "value_eur_million": 16.0
+                    "name": "Johny Placide",
+                    "value_eur_million": 0.15
                 },
                 {
-                    "name": "Josué Casimir",
-                    "value_eur_million": 3.5
-                },
-                {
-                    "name": "Danley Jean Jacques",
-                    "value_eur_million": 3.0
+                    "name": "Josué Duverger",
+                    "value_eur_million": 0.05
                 },
                 {
                     "name": "Hannes Delcroix",
@@ -246,48 +242,32 @@
                     "value_eur_million": 2.0
                 },
                 {
-                    "name": "Lenny Joseph",
-                    "value_eur_million": 2.0
+                    "name": "Ricardo Adé",
+                    "value_eur_million": 0.3
                 },
                 {
-                    "name": "Carlens Arcus",
-                    "value_eur_million": 1.8
-                },
-                {
-                    "name": "Frantzdy Pierrot",
-                    "value_eur_million": 1.5
-                },
-                {
-                    "name": "Louicius Deedson",
-                    "value_eur_million": 1.2
-                },
-                {
-                    "name": "Derrick Etienne Jr.",
-                    "value_eur_million": 0.8
-                },
-                {
-                    "name": "Duckens Nazon",
-                    "value_eur_million": 0.8
-                },
-                {
-                    "name": "Alexandre Pierre",
-                    "value_eur_million": 0.7
-                },
-                {
-                    "name": "Wilguens Paugain",
-                    "value_eur_million": 0.6
+                    "name": "Keeto Thermoncy",
+                    "value_eur_million": 0.1
                 },
                 {
                     "name": "Martin Expérience",
                     "value_eur_million": 0.35
                 },
                 {
-                    "name": "Ricardo Adé",
-                    "value_eur_million": 0.3
+                    "name": "Duke Lacroix",
+                    "value_eur_million": 0.125
                 },
                 {
-                    "name": "Ruben Providence",
-                    "value_eur_million": 0.3
+                    "name": "Carlens Arcus",
+                    "value_eur_million": 1.8
+                },
+                {
+                    "name": "Wilguens Paugain",
+                    "value_eur_million": 0.8
+                },
+                {
+                    "name": "Danley Jean Jacques",
+                    "value_eur_million": 3.0
                 },
                 {
                     "name": "Leverton Pierre",
@@ -298,32 +278,52 @@
                     "value_eur_million": 0.2
                 },
                 {
-                    "name": "Yassin Fortuné",
-                    "value_eur_million": 0.2
-                },
-                {
-                    "name": "Johny Placide",
-                    "value_eur_million": 0.15
-                },
-                {
-                    "name": "Duke Lacroix",
-                    "value_eur_million": 0.125
-                },
-                {
                     "name": "Carl Sainté",
                     "value_eur_million": 0.125
                 },
                 {
-                    "name": "Keeto Thermoncy",
-                    "value_eur_million": 0.025
-                },
-                {
-                    "name": "Josué Duverger",
-                    "value_eur_million": 0.1
-                },
-                {
                     "name": "Woodensky Pierre",
                     "value_eur_million": 0.1
+                },
+                {
+                    "name": "Jean-Ricner Bellegarde",
+                    "value_eur_million": 16.0
+                },
+                {
+                    "name": "Derrick Etienne Jr.",
+                    "value_eur_million": 0.8
+                },
+                {
+                    "name": "Ruben Providence",
+                    "value_eur_million": 0.3
+                },
+                {
+                    "name": "Josué Casimir",
+                    "value_eur_million": 3.0
+                },
+                {
+                    "name": "Louicius Deedson",
+                    "value_eur_million": 1.2
+                },
+                {
+                    "name": "Wilson Isidor",
+                    "value_eur_million": 18.0
+                },
+                {
+                    "name": "Lenny Joseph",
+                    "value_eur_million": 2.0
+                },
+                {
+                    "name": "Frantzdy Pierrot",
+                    "value_eur_million": 1.5
+                },
+                {
+                    "name": "Duckens Nazon",
+                    "value_eur_million": 0.8
+                },
+                {
+                    "name": "Yassin Fortuné",
+                    "value_eur_million": 0.3
                 }
             ]
         },
@@ -331,67 +331,23 @@
             "team_name": "Scotland",
             "players": [
                 {
-                    "name": "Scott McTominay",
-                    "value_eur_million": 40.0
+                    "name": "Angus Gunn",
+                    "value_eur_million": 1.0
                 },
                 {
-                    "name": "Billy Gilmour",
-                    "value_eur_million": 20.0
+                    "name": "Liam Kelly",
+                    "value_eur_million": 0.8
                 },
                 {
-                    "name": "Aaron Hickey",
-                    "value_eur_million": 16.0
-                },
-                {
-                    "name": "Ben Gannon-Doak",
-                    "value_eur_million": 16.0
-                },
-                {
-                    "name": "John McGinn",
-                    "value_eur_million": 15.0
-                },
-                {
-                    "name": "Lewis Ferguson",
-                    "value_eur_million": 14.0
-                },
-                {
-                    "name": "Andrew Robertson",
-                    "value_eur_million": 10.0
-                },
-                {
-                    "name": "Nathan Patterson",
-                    "value_eur_million": 10.0
-                },
-                {
-                    "name": "George Hirst",
-                    "value_eur_million": 10.0
-                },
-                {
-                    "name": "Ryan Christie",
-                    "value_eur_million": 9.0
-                },
-                {
-                    "name": "Kieran Tierney",
-                    "value_eur_million": 8.0
-                },
-                {
-                    "name": "Ché Adams",
-                    "value_eur_million": 5.0
+                    "name": "Craig Gordon",
+                    "value_eur_million": 0.05
                 },
                 {
                     "name": "Scott McKenna",
                     "value_eur_million": 4.0
                 },
                 {
-                    "name": "Lawrence Shankland",
-                    "value_eur_million": 3.0
-                },
-                {
                     "name": "Jack Hendry",
-                    "value_eur_million": 2.5
-                },
-                {
-                    "name": "Ross Stewart",
                     "value_eur_million": 2.5
                 },
                 {
@@ -403,36 +359,80 @@
                     "value_eur_million": 2.0
                 },
                 {
-                    "name": "Findlay Curtis",
-                    "value_eur_million": 2.0
+                    "name": "Grant Hanley",
+                    "value_eur_million": 0.2
                 },
                 {
-                    "name": "Angus Gunn",
-                    "value_eur_million": 1.5
+                    "name": "Kieran Tierney",
+                    "value_eur_million": 8.0
+                },
+                {
+                    "name": "Andrew Robertson",
+                    "value_eur_million": 7.0
+                },
+                {
+                    "name": "Aaron Hickey",
+                    "value_eur_million": 16.0
+                },
+                {
+                    "name": "Nathan Patterson",
+                    "value_eur_million": 10.0
                 },
                 {
                     "name": "Anthony Ralston",
                     "value_eur_million": 1.5
                 },
                 {
-                    "name": "Liam Kelly",
-                    "value_eur_million": 0.8
+                    "name": "Scott McTominay",
+                    "value_eur_million": 40.0
                 },
                 {
-                    "name": "Lyndon Dykes",
-                    "value_eur_million": 0.8
+                    "name": "Lewis Ferguson",
+                    "value_eur_million": 14.0
+                },
+                {
+                    "name": "John McGinn",
+                    "value_eur_million": 13.0
+                },
+                {
+                    "name": "Ryan Christie",
+                    "value_eur_million": 8.0
+                },
+                {
+                    "name": "Tyler Fletcher",
+                    "value_eur_million": 1.5
                 },
                 {
                     "name": "Kenny McLean",
                     "value_eur_million": 0.4
                 },
                 {
-                    "name": "Grant Hanley",
-                    "value_eur_million": 0.2
+                    "name": "Findlay Curtis",
+                    "value_eur_million": 2.0
                 },
                 {
-                    "name": "Craig Gordon",
-                    "value_eur_million": 0.025
+                    "name": "Ben Gannon-Doak",
+                    "value_eur_million": 15.0
+                },
+                {
+                    "name": "George Hirst",
+                    "value_eur_million": 10.0
+                },
+                {
+                    "name": "Ché Adams",
+                    "value_eur_million": 5.0
+                },
+                {
+                    "name": "Lawrence Shankland",
+                    "value_eur_million": 3.0
+                },
+                {
+                    "name": "Ross Stewart",
+                    "value_eur_million": 2.5
+                },
+                {
+                    "name": "Lyndon Dykes",
+                    "value_eur_million": 0.8
                 }
             ]
         }
