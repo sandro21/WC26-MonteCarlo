@@ -24,12 +24,8 @@
                     "value_eur_million": 7.5
                 },
                 {
-                    "name": "Israel Reyes",
-                    "value_eur_million": 6.5
-                },
-                {
-                    "name": "Jorge Sánchez",
-                    "value_eur_million": 2.0
+                    "name": "Luis Romo",
+                    "value_eur_million": 3.0
                 },
                 {
                     "name": "Mateo Chávez",
@@ -40,8 +36,12 @@
                     "value_eur_million": 2.8
                 },
                 {
-                    "name": "Luis Romo",
-                    "value_eur_million": 3.0
+                    "name": "Israel Reyes",
+                    "value_eur_million": 6.5
+                },
+                {
+                    "name": "Jorge Sánchez",
+                    "value_eur_million": 2.0
                 },
                 {
                     "name": "Edson Álvarez",
@@ -117,12 +117,12 @@
                     "value_eur_million": 1.6
                 },
                 {
-                    "name": "Ricardo Goss",
-                    "value_eur_million": 0.35
+                    "name": "Ronwen Williams",
+                    "value_eur_million": 0.8
                 },
                 {
-                    "name": "Ronwen Williams",
-                    "value_eur_million": 1.2
+                    "name": "Ricardo Goss",
+                    "value_eur_million": 0.35
                 },
                 {
                     "name": "Mbekezeli Mbokazi",
@@ -222,6 +222,14 @@
             "team_name": "Korea Republic",
             "players": [
                 {
+                    "name": "Bum-keun Song",
+                    "value_eur_million": 1.0
+                },
+                {
+                    "name": "Hyeon-woo Jo",
+                    "value_eur_million": 0.65
+                },
+                {
                     "name": "Seung-gyu Kim",
                     "value_eur_million": 0.5
                 },
@@ -314,16 +322,8 @@
                     "value_eur_million": 6.0
                 },
                 {
-                    "name": "Cho Gue-sung",
+                    "name": "Gue-sung Cho",
                     "value_eur_million": 2.5
-                },
-                {
-                    "name": "Bum-keun Song",
-                    "value_eur_million": 1.0
-                },
-                {
-                    "name": "Hyeon-woo Jo",
-                    "value_eur_million": 1.0
                 }
             ]
         },
@@ -331,11 +331,19 @@
             "team_name": "Czechia",
             "players": [
                 {
+                    "name": "Lukas Hornicek",
+                    "value_eur_million": 18.0
+                },
+                {
+                    "name": "Matej Kovar",
+                    "value_eur_million": 8.0
+                },
+                {
                     "name": "Jindrich Stanek",
                     "value_eur_million": 2.0
                 },
                 {
-                    "name": "Ladislav Krejcí",
+                    "name": "Ladislav Krejčí",
                     "value_eur_million": 22.0
                 },
                 {
@@ -367,7 +375,7 @@
                     "value_eur_million": 2.5
                 },
                 {
-                    "name": "Tomas Soucek",
+                    "name": "Tomáš Souček",
                     "value_eur_million": 10.0
                 },
                 {
@@ -391,7 +399,7 @@
                     "value_eur_million": 0.375
                 },
                 {
-                    "name": "David Doudĕra",
+                    "name": "David Doudera",
                     "value_eur_million": 3.5
                 },
                 {
@@ -425,14 +433,6 @@
                 {
                     "name": "Tomas Chory",
                     "value_eur_million": 2.7
-                },
-                {
-                    "name": "Matej Kovar",
-                    "value_eur_million": 7.0
-                },
-                {
-                    "name": "Antonin Barak",
-                    "value_eur_million": 4.5
                 }
             ]
         }
