@@ -52,28 +52,44 @@ def get_current_elos(df): # function to extract elos of each team based on the g
             
     return latest_elos
 
-df = pd.read_csv(DATA_DIR / 'elo_results.csv', parse_dates=['date'])
-current_elos = get_current_elos(df)
+def _init_tournament_data():
+    """Load all tournament data. Called lazily so bare imports don't trigger heavy I/O."""
+    df = pd.read_csv(DATA_DIR / 'elo_results.csv', parse_dates=['date'])
+    # Ensure date column is proper datetime (guards against Arrow/string backend)
+    df['date'] = pd.to_datetime(df['date'])
+    _current_elos = get_current_elos(df)
 
-try:
-    mvi_df = pd.read_csv(DATA_DIR / 'squad_features.csv')
-    mvi_data = dict(zip(mvi_df['team_name'], mvi_df['market_value_index']))
-except FileNotFoundError:
-    print("Warning: squad_features.csv not found. All MVIs will default to 1.0")
-    mvi_data = {}
+    try:
+        mvi_df = pd.read_csv(DATA_DIR / 'squad_features.csv')
+        _mvi_data = dict(zip(mvi_df['team_name'], mvi_df['market_value_index']))
+    except FileNotFoundError:
+        print("Warning: squad_features.csv not found. All MVIs will default to 1.0")
+        _mvi_data = {}
 
-# --- Tournament State Management (Match Overrides) ---
-historical_matches = {}
-# Filter for matches that happen on or after the start of the 2026 World Cup
-df_2026 = df[df['date'] >= pd.Timestamp('2026-06-11')]
-for row in df_2026.itertuples():
-    if pd.notna(row.home_score) and pd.notna(row.away_score):
-        # Store both orientations so we don't worry about home/away order
-        historical_matches[(row.home_team, row.away_team)] = (row.home_score, row.away_score)
-        historical_matches[(row.away_team, row.home_team)] = (row.away_score, row.home_score)
-# -----------------------------------------------------
+    # --- Tournament State Management (Match Overrides) ---
+    _historical_matches = {}
+    # Filter for matches that happen on or after the start of the 2026 World Cup
+    df_2026 = df[df['date'] >= pd.Timestamp('2026-06-11')]
+    for row in df_2026.itertuples():
+        if pd.notna(row.home_score) and pd.notna(row.away_score):
+            # Store both orientations so we don't worry about home/away order
+            _historical_matches[(row.home_team, row.away_team)] = (row.home_score, row.away_score)
+            _historical_matches[(row.away_team, row.home_team)] = (row.away_score, row.home_score)
+    # -----------------------------------------------------
+    return _current_elos, _mvi_data, _historical_matches
+
+# Module-level state — initialized lazily on first use
+current_elos = None
+mvi_data = None
+historical_matches = None
+
+def _ensure_initialized():
+    global current_elos, mvi_data, historical_matches
+    if current_elos is None:
+        current_elos, mvi_data, historical_matches = _init_tournament_data()
 
 def simulate_match(team1, team2, is_knockout=False):
+    _ensure_initialized()
     # Tournament State Lock: If the match has already happened in real life, return the real score!
     if (team1, team2) in historical_matches:
         score1, score2 = historical_matches[(team1, team2)]
@@ -235,6 +251,7 @@ def run_monte_carlo(N=10000):
     return results
 
 if __name__ == '__main__':
+    _ensure_initialized()
     results = run_monte_carlo(10000)
     
     # Save results to data/processed/simulation_results.csv

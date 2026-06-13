@@ -47,6 +47,7 @@ def process_and_update(matches, target_date):
         
     print(f"Loading existing Elo dataset from {ELO_FILE}...")
     df_elo = pd.read_csv(ELO_FILE, parse_dates=['date'])
+    df_elo['date'] = pd.to_datetime(df_elo['date'])
     current_elos = get_current_elos(df_elo)
     
     new_rows = []
