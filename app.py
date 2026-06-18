@@ -88,9 +88,18 @@ def load_models():
     away_model = joblib.load(MODEL_DIR / 'away_poisson.pkl')
     return home_model, away_model
 
+# 2b. Cached Box-Score (shots / SOT / saves) resources — display-only layer
+@st.cache_resource
+def load_stats_resources():
+    from src.predict_match_stats import load_stats_models, load_match_stats, build_rate_tables
+    models, n_model = load_stats_models()
+    rate_tables = build_rate_tables(load_match_stats())
+    return models, n_model, rate_tables
+
 # Load resources
 df_sim, latest_elos = load_data()
 home_model, away_model = load_models()
+stats_models, stats_n, stats_rate_tables = load_stats_resources()
 sorted_teams = sorted(list(latest_elos.keys()))
 
 # --- Header Section ---
@@ -233,6 +242,33 @@ with tab2:
             'Probability (%)': [win_prob, draw_prob, loss_prob]
         })
         st.bar_chart(outcome_data, x='Outcome', y='Probability (%)', width='stretch')
+
+        # --- Predicted Box Score (display-only; does NOT affect goals or the bracket) ---
+        st.markdown("---")
+        st.markdown("###### Predicted Box Score")
+        from src.predict_match_stats import predict_match_stats
+        # Reuse the exact goals-model Elo convention: team1 perspective, same neutral flag.
+        stats_elo_diff = elo1 - elo2
+        box = predict_match_stats(
+            team1, team2, stats_elo_diff, neutral_val,
+            models=stats_models, n_model=stats_n, rate_tables=stats_rate_tables
+        )
+
+        def _rng(lo, hi):
+            return f"{lo:.0f}–{hi:.0f}"
+
+        for label, key in [(team1, 'team1'), (team2, 'team2')]:
+            p = box[key]
+            st.markdown(f"**{label}**")
+            bc1, bc2, bc3 = st.columns(3)
+            bc1.metric("Total Shots", f"{p['shots']:.1f}", help=f"~{_rng(*p['shots_range'])} range")
+            bc2.metric("Shots on Target", f"{p['sot']:.1f}", help=f"~{_rng(*p['sot_range'])} range")
+            bc3.metric("Saves", f"{p['saves']:.1f}", help=f"~{_rng(*p['saves_range'])} range")
+
+        conf = box['model_weight']
+        source = (f"fitted GLM weight {conf*100:.0f}% / rate-model {100-conf*100:.0f}%"
+                  if conf > 0 else "recency-weighted rate model + league priors (no fitted GLM yet)")
+        st.caption(f"Ranges are rough (≈1 SD). Blend: {source}. Display-only — shots do not affect advancement.")
 
 # --- Tab 3: Bracket Explorer ---
 with tab3:
